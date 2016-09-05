@@ -54,7 +54,6 @@ register({
       '  }',
       '})'
     ].join('\n')
-
     globalEval(code)
   }
 })

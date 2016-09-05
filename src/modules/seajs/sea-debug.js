@@ -1059,6 +1059,7 @@ data.fetchedList = fetchedList
 data.cid = cid
 
 seajs.require = function(id) {
+  console.log(id);
   var mod = Module.get(Module.resolve(id))
   if (mod.status < STATUS.EXECUTING) {
     mod.onload()

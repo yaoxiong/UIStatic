@@ -23,6 +23,11 @@ define('oEcstore', ['jquery', 'ElemtObject', 'DataObject', 'baseObject', 'ruleLi
 
 
     module.exports = {
+        // 插入html
+        html: function(elem, html) {
+            elem.html(html);
+            this.render();
+        },
 
         // 删除对象
         remove: function(elem) {
@@ -31,11 +36,16 @@ define('oEcstore', ['jquery', 'ElemtObject', 'DataObject', 'baseObject', 'ruleLi
             this.render();
         },
 
+        // 添加对象
+        append: function(elem, html) {
+            elem.append(html);
+            this.render();
+        },
+
         // 重画页面
         render: function() {
 
             var dataObject = this.getData($("#page"));
-            console.log(dataObject);
             var object = dataObject.object;
             var elem = dataObject.elem;
             scope.currentRender(elem, object, this.setRule);
@@ -51,7 +61,6 @@ define('oEcstore', ['jquery', 'ElemtObject', 'DataObject', 'baseObject', 'ruleLi
             var dataRule = $.extend(dataObject);
 
             var dataObjectElemt = baseObject.getDataObject(html, ElemtObject);
-
             // 获得所有的属性
             var protoList = $(html).find("[data-proto]");
             for (var i = 0; i < protoList.length; i++) {
@@ -108,18 +117,79 @@ define('oEcstore', ['jquery', 'ElemtObject', 'DataObject', 'baseObject', 'ruleLi
                                     elem.val(val);
                                 };
                                 break;
+                            case 'img':
+                                val = {
+                                    src: $(protoList[i]).attr("src"),
+                                    alt: $(protoList[i]).attr("alt")
+                                };
+                                setVal = function(val, elem) {
+                                    elem.attr("src", val.src);
+                                    elem.attr("alt", val.alt);
+                                };
+                                break;
+                            case 'file':
+                                setVal = function(val, elem) {
+
+                                    var files = elem.prop('files');
+                                    if (files && files.length > 0) {
+                                        var reader = new FileReader();
+                                        reader.readAsDataURL(files[0]);
+                                        reader.onload = function(evt){
+                                            var fileString = evt.target.result;
+                                            val = fileString;
+                                            parent["__" + protoN + "__"] = val;
+                                        }
+                                    } else {
+                                        val = null;
+                                    }
+                                };
+                                break;
                             default: // todo 待完善
                                 break;
                         }
-                        parent["__" + protoN + "__"] = val;
 
-                        // 数据双向绑定监听
-                        // 属性数据绑定到标签
-                        baseObject.watchProperty(parent, protoN, $(protoList[i]), setVal);
+                    };
 
-                        // 值标签监听值绑定到属性
-                        baseObject.watchElement(parent, protoN, $(protoList[i]));
+
+                    // 给标签属性添加模版事件
+                    var modeN = $(protoList[i]).attr("data-mode");
+                    var isInit = $(protoList[i]).attr("data-init");
+                    if (modeN) {
+                        // 标签对象继承模版对象方法
+                        var methods = components.getInstance(modeN).methods;
+                        if (methods) {
+                            for (var k in methods) {
+                                parentElemt[protoN][k] = methods[k].bind({elem: parentElemt[protoN], object: val});
+                                // parentElemt[protoN][k] = methods[k];
+                            };
+                        };
+
+                        var modeCallBack = components.init(modeN);
+                        if (modeCallBack) {
+                            modeCallBack.prototype.elem = parentElemt[protoN];
+                            modeCallBack.prototype.object = val;
+                            modeCallBack.prototype.setRule = this.setRule;
+                            modeCallBack.prototype.globleObject = dataObject;
+                            modeCallBack.prototype.globleElemt = dataObjectElemt;
+
+                            if (!isInit) {
+                                new modeCallBack();
+                            };
+                        };
+
+                       parentElemt[protoN].elem.attr("data-init", "true");
+
                     }
+
+
+                    parent["__" + protoN + "__"] = val;
+
+                    // 数据双向绑定监听
+                    // 属性数据绑定到标签
+                    baseObject.watchProperty(parent, protoN, $(protoList[i]), setVal);
+
+                    // 值标签监听值绑定到属性
+                    baseObject.watchElement(parent, protoN, parentElemt[protoN]);
                 }
 
             }
@@ -130,17 +200,35 @@ define('oEcstore', ['jquery', 'ElemtObject', 'DataObject', 'baseObject', 'ruleLi
                 // 判断改对象是否有模版对象，有就把模板事件继承过来
                 if (dataObjectElemt[key] instanceof ElemtObject) {
 
+                    // 模版对象初始化
                     var modeN = dataObjectElemt[key].elem.attr("data-mode");
 
+                    var isInit = dataObjectElemt[key].elem.attr("data-init");
                     if (modeN) {
-                        var modeCallBack = components.getInstance(modeN);
-                        if (modeCallBack) {
-                            try{
-                                modeCallBack(dataObjectElemt[key], dataObject[key], this.setRule);
-                            }catch(e){
 
-                            }
+                        // 标签对象继承模版对象方法
+                        var methods = components.getInstance(modeN).methods;
+                        if (methods) {
+                            for (var k in methods) {
+                                dataObjectElemt[key][k] = methods[k].bind({elem: dataObjectElemt[key], object: dataObject[key]});
+                                // dataObjectElemt[key][k] = methods[k];
+                            };
                         };
+
+                        var modeCallBack = components.init(modeN);
+                        if (modeCallBack) {
+                            modeCallBack.prototype.elem = dataObjectElemt[key];
+                            modeCallBack.prototype.object = dataObject[key];
+                            modeCallBack.prototype.setRule = this.setRule;
+                            modeCallBack.prototype.globleObject = dataObject;
+                            modeCallBack.prototype.globleElemt = dataObjectElemt;
+
+                            if (!isInit) {
+                                new modeCallBack();
+                            };
+                        };
+
+                        dataObjectElemt[key].elem.attr("data-init", "true");
                     };
                 };
             };

@@ -5,5 +5,9 @@
         2.各个模块之间通讯的对象。
 */
 define('scope', [], function(require, exports, module) {
-    return {};
+    return {
+        backHome: -1,
+        orderNum: 0,
+        isLBS: true
+    };
 });
