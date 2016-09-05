@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* ----------------------------- 预存款 -------------------------------*/
+/* line 5, ../../../sass/h5/member/balance.scss */
+.balance-header {
+  padding: 0.4rem 0.26667rem;
+  height: 4.4rem;
+}
+
+/* line 9, ../../../sass/h5/member/balance.scss */
+.balance-header-inner {
+  height: 100%;
+  padding: 0.53333rem 0.53333rem 0.93333rem 0.53333rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+/* line 14, ../../../sass/h5/member/balance.scss */
+.balance-header-inner .balance-header-brief {
+  position: relative;
+  font-size: 1.25em;
+  margin-right: 0.26667rem;
+  overflow: hidden;
+}
+/* line 19, ../../../sass/h5/member/balance.scss */
+.balance-header-inner .balance-header-brief .balance-value {
+  position: absolute;
+  bottom: -.1em;
+  font-size: 3.33333em;
+  font-weight: bold;
+}
+/* line 25, ../../../sass/h5/member/balance.scss */
+.balance-header-inner .balance-header-brief .unit {
+  margin-left: .5em;
+  font-size: 0.3em;
+}
+
+/* line 31, ../../../sass/h5/member/balance.scss */
+.balance-header-side {
+  position: relative;
+  text-align: right;
+  width: 2.48rem;
+}
+/* line 36, ../../../sass/h5/member/balance.scss */
+.balance-header-side .balance-header-desc .iconfont {
+  top: 2px;
+  margin-right: .2em;
+  font-size: 1.2em;
+}
+/* line 42, ../../../sass/h5/member/balance.scss */
+.balance-header-side .balance-header-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 48, ../../../sass/h5/member/balance.scss */
+.balance-header-side .btn {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  width: 100%;
+}
+/* line 52, ../../../sass/h5/member/balance.scss */
+.balance-header-side .btn .iconfont {
+  top: -1px;
+  font-size: 1.6em;
+  margin-right: 0.2rem;
+}
+
+/* line 60, ../../../sass/h5/member/balance.scss */
+.balance-wrapper .balance-empty {
+  margin-top: 3.26667rem;
+  font-size: 0.36rem;
+}
+/* line 5, ../../../sass/oecstore/mixins/_empty-style.scss */
+.balance-wrapper .balance-empty .empty-info::before {
+  height: 2.53333rem;
+  background: url("../../../images/member/balance-empty.png") no-repeat center;
+  background-size: contain;
+}
+/* line 66, ../../../sass/h5/member/balance.scss */
+.balance-wrapper .empty-info:before {
+  content: "";
+  width: 2.22667rem;
+  height: 2.53333rem;
+  margin: 0 auto;
+  margin-bottom: 0.76rem;
+}
+
+/* line 75, ../../../sass/h5/member/balance.scss */
+.balance-detail-wrapper {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  font-size: 1.16667em;
+}
+/* line 79, ../../../sass/h5/member/balance.scss */
+.balance-detail-wrapper .balance-detail-header {
+  padding: 0.4rem 0;
+  line-height: 1.1;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 83, ../../../sass/h5/member/balance.scss */
+.balance-detail-wrapper .balance-detail-header .-col-right {
+  color: #666;
+}
+
+/* line 89, ../../../sass/h5/member/balance.scss */
+.balance-detail-list .balance-detail-title {
+  margin-bottom: 0.13333rem;
+}
+/* line 92, ../../../sass/h5/member/balance.scss */
+.balance-detail-list .balance-detail-date {
+  font-size: .86em;
+  color: #999;
+}
+/* line 96, ../../../sass/h5/member/balance.scss */
+.balance-detail-list .flex-row-between {
+  padding: 0.4rem 0;
+  line-height: 1.1;
+}
+/* line 99, ../../../sass/h5/member/balance.scss */
+.balance-detail-list .flex-row-between:not(:last-child) {
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 104, ../../../sass/h5/member/balance.scss */
+.balance-detail-list .balance-detail-add .-col-right {
+  color: #14b2f6;
+}
+/* line 108, ../../../sass/h5/member/balance.scss */
+.balance-detail-list .-col-right {
+  width: 4em;
+  font-size: 1.07em;
+  text-align: right;
+}
+
+/* line 115, ../../../sass/h5/member/balance.scss */
+.balance-note-wrapper .balance-note-item {
+  padding: 0 0.4rem;
+}
+/* line 118, ../../../sass/h5/member/balance.scss */
+.balance-note-wrapper .balance-note-header {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 1.16667em;
+  font-weight: bold;
+}
+/* line 125, ../../../sass/h5/member/balance.scss */
+.balance-note-wrapper .balance-note-main {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  text-indent: 1em;
+  line-height: 1.4;
+}

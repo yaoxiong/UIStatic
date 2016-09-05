@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* ----------------------------- 设置 -------------------------------*/
+/* line 5, ../../../sass/h5/member/setting.scss */
+.settings-list .flex-row-between .-col-left {
+  font-size: 1.25em;
+}
+/* line 10, ../../../sass/h5/member/setting.scss */
+.settings-list .disabled .-col-right {
+  visibility: hidden;
+}

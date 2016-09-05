@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="../../../dest/css/oEcstore.css">
+    <link rel="stylesheet" href="../../../dest/css/h5/gallery/gallery.css">
+    <script src="../lib/jquery.js"></script>
+    <script src="../../../dest/js/flexible.js"></script>
+</head>
+<body>
+<div class="layout-page top-layout-page gallery">
+    <!-- 商品种类搜索框和排列按钮 -->
+    <div class="top-nav text-center">
+        <div class="layout-search-title">
+            <div class="title-left">
+                <a href="#" class="title-back">
+                    <i class="iconfont iconfont-angle-left"></i>
+                </a>
+            </div>
+            <div class="title-content">
+                <div class="search-group">
+                    <i class="iconfont iconfont-search"></i>
+                    <input type="text" placeholder="搜索热门商品" class="input-group-control">
+                </div>
+            </div>
+            <div class="title-right">
+                <div class="title-cog">
+                    <i class="iconfont iconfont-list-grid"></i>
+                </div>
+            </div>
+        </div>
+        <!-- data-length 导航列表长度 data-act 选中列表序号，从1开始-->
+        <div class="layout-nav" data-length="4" data-act="1">
+            <ul class="btn-group-justified">
+                <li class="btn btn-link btn-gallery-total">
+                    <p class="layout-nav-info">综合</p>
+                </li>
+                <li class="btn btn-link btn-gallery-price">
+                    <p class="layout-nav-info">
+                        价格
+                        <span class="sort-triangles-wrapper">
+                            <span class="triangle triangle-up"></span>
+                            <span class="triangle triangle-down"></span>
+                        </span>
+                    </p>
+                </li>
+                <li class="btn btn-link btn-gallery-sales">
+                    <p class="layout-nav-info">销量</p>
+                </li>
+                <li class="btn btn-link btn-gallery-filter">
+                    <p class="layout-nav-info">
+                        筛选
+                        <span class="sort-triangles-wrapper">
+                            <span class="triangle triangle-up"></span>
+                            <span class="triangle triangle-down"></span>
+                        </span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="layout-content gallery-wrapper">
+        <!-- 筛选条件 -->
+        <div class="gallery-filter-wrapper flex-cloumn-between hide">
+            <div class="gallery-filter-header -cloumn-top">
+                <div class="gallery-filter-title flex-row-between flex-center">
+                    <div class="-col-content">支持门店自提</div>
+                    <div class="-col-right">
+                        <div class="switch">        
+                            <input type="checkbox" name="hehe" id="hihi">
+                            <label for="hihi"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-filter-title flex-row-between flex-center">
+                    <div class="-col-content">有货商品</div>
+                    <div class="-col-right">
+                        <div class="switch">        
+                            <input type="checkbox" name="hehe" id="hehe">
+                            <label for="hehe"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-filter-main flex-row-between -cloumn-content">
+                <div class="gallery-filter-main-left -col-left">
+                    <ul>
+                        <li class="gallery-filter-menu active">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                        <li class="gallery-filter-menu select">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                        <li class="gallery-filter-menu">品牌</li>
+                    </ul>
+                </div>
+                <div class="gallery-filter-main-right -col-content">
+                    <ul class="gallery-filter-menu-list active">
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item active">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item active">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item active">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item active">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                    </ul>
+                    <ul class="gallery-filter-menu-list">
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item active">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                    </ul>
+                    <ul class="gallery-filter-menu-list">
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item active">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                        <li class="gallery-filter-menu-item">高跟鞋</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gallery-filter-footer btn-group-justified">
+                <a href="#" class="btn btn-primary-dark btn-reset">重置</a>
+                <a href="#" class="btn btn-primary-light btn-confirm">确认</a>
+            </div>
+        </div>
+        <div class="goods-brief-wrapper ">
+            <!--  默认2列布局，3列请加column-3类，1列请加column-1类-->
+            <ul class="goods-brief-list clearfix column-1">
+                <li class="goods-brief-item">
+                    <a href="">
+                        <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                        <div class="goods-brief-info">
+                            <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                            <p class="goods-brief-price">￥179</p>
+                            <p class="goods-brief-note">
+                                <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="goods-brief-item">
+                    <a href="">
+                        <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                        <div class="goods-brief-info">
+                            <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                            <p class="goods-brief-price">￥179</p>
+                            <p class="goods-brief-note">
+                                <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="goods-brief-item">
+                    <a href="">
+                        <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                        <div class="goods-brief-info">
+                            <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                            <p class="goods-brief-price">￥179</p>
+                            <p class="goods-brief-note">
+                                <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="goods-brief-item">
+                    <a href="">
+                        <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                        <div class="goods-brief-info">
+                            <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                            <p class="goods-brief-price">￥179</p>
+                            <p class="goods-brief-note">
+                                <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="goods-brief-item">
+                    <a href="">
+                        <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                        <div class="goods-brief-info">
+                            <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                            <p class="goods-brief-price">￥179</p>
+                            <p class="goods-brief-note">
+                                <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@import "../../oecstore/init.scss";
+.edit-shopping-address,.new-shopping-address{
+    // 收获信息
+    .form-group-wrapper{
+        margin-top:px2rem(20px);
+        margin-bottom:px2rem(20px);
+        padding-left: px2rem(30px);
+        padding-right: px2rem(30px);
+    }
+    .form-wrapper{
+        .well{
+            margin-left:0;
+            margin-right:0;
+        }
+    }
+}

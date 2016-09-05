@@ -1,0 +1,132 @@
+@import "../../oecstore/init.scss";
+.branch-ptdetail{
+    // 详情图片和价格
+    @at-root .branch-ptdetail-header{
+        @at-root .branch-ptdetail-banner{
+            position:relative;
+            height: px2rem(400px);
+            overflow:hidden;
+        }
+        @at-root .branch-ptdetail-title{
+            position:absolute;
+            left:0;right:0;
+            bottom:-1px;
+            color: rgb(255,255,255);
+            height: px2rem(50px);
+            line-height: px2rem(50px);
+            padding-left: px2rem(35px);
+            padding-right: px2rem(35px);
+            background-color: rgba(0,0,0,.5);
+            overflow: hidden;
+            > span{
+                max-width:50%;
+                @include nowrap();
+            }
+        }
+        .icon-favorite{
+            position:absolute;
+            width:px2rem(70px);
+            @include height(px2rem(70px));
+            top:px2rem(40px);
+            right:px2rem(40px);
+            color:#fff;
+            background:rgba(0,0,0,.5);
+            border-radius:50%;
+            text-align:center;
+            font-size:px2rem(40px);
+        }
+        @at-root .branch-ptdetail-price{
+            height: px2rem(100px);
+            padding-top:px2rem($gap);
+            padding-left: px2rem(40px);
+            padding-right: px2rem(40px);
+            background-color: rgb(255,255,255);
+            border-bottom:1px solid $border-color;
+            .branch-cur-price{
+                color:$oec-primary-light;
+                .price{
+                    font-size:px2em(20px);
+                }
+            }
+            .branch-original-price{
+                color:$gray-light;
+                .price{
+                    text-decoration:line-through;
+                }
+            }
+            .branch-ptdetail-share{
+                font-size:1.25em;
+                height: px2rem(40px);
+                line-height: px2rem(40px);
+                border-left:1px solid $border-color;
+                padding-left: px2rem(50px);
+                color:$gray-light;
+            }
+        }
+    }
+    // 详情条形码
+    @at-root .branch-ptdetail-content{
+        @at-root .branch-ptdetail-barcode{
+            $cutter-size: 40px;
+            $horizontal-margin:25px;
+            position: relative;
+            margin-left: px2rem($horizontal-margin);
+            margin-right: px2rem($horizontal-margin);
+            padding-top: px2rem(30px);
+            padding-bottom: px2rem(30px);
+            text-align: center;
+            @at-root .branch-ptdetail-barcode-before, .branch-ptdetail-barcode-after{
+                position: absolute;
+                bottom:px2rem(- $cutter-size / 2);
+                display: block;
+                width: px2rem(20px);
+                height: px2rem(40px);
+                background-color: $body-bg;
+                z-index: 2;
+            }
+            @at-root .branch-ptdetail-barcode-before{
+                left: -1 * px2rem($horizontal-margin + $cutter-size / 2);
+            }
+            @at-root .branch-ptdetail-barcode-after{
+                right: -1 * px2rem($horizontal-margin + $cutter-size / 2);
+            }
+            &:before, &:after{
+                content: ' ';
+                position: absolute;
+                bottom:px2rem(- $cutter-size / 2);
+                display:block;
+                width: px2rem(40px);
+                height: px2rem(40px);
+                @include border-radius(50%);
+                background-color: $body-bg;
+                @include box-shadow(0 px2rem(2px) px2rem(10px) 0 rgba(0,0,0,.15) inset);
+            }
+            &:before{
+                left: -1 * px2rem($horizontal-margin + $cutter-size / 2);
+            }
+            &:after{
+                right: -1 * px2rem($horizontal-margin + $cutter-size / 2);
+            }
+            img{
+                width: px2rem(532px);
+                height: px2rem(193px);
+            }
+            @at-root .branch-ptdetail-barcode-info{
+                padding: px2rem(30px) 0;
+                color: rgb(102,102,102);
+            }
+        }
+        @at-root .branch-ptdetail-list{
+            padding-left:px2rem(40px);
+            padding-right:px2rem(40px);
+            .flex-row-between{
+                @include height(px2rem(80px));
+                .-col-right{
+                    color:inherit;
+                    font-size:1em;
+                }
+            }
+        }
+    }
+}
+

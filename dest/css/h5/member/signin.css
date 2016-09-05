@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* ----------------------------- 签到 -------------------------------*/
+/* line 5, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .signin-header {
+  padding-top: 0.26667rem;
+  padding-bottom: 0.26667rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 11, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .signin-header-info {
+  height: 2.4rem;
+  padding-left: 3.53333rem;
+  background: url("../../../images/member/signin-head.png") no-repeat;
+  background-size: contain;
+  background-position: 0.33333rem center;
+  text-align: center;
+  font-size: 1.25em;
+  overflow: hidden;
+  font-weight: bold;
+}
+/* line 21, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .signin-header-info .signin-header-action {
+  margin-top: 0.4rem;
+  margin-bottom: 0.32rem;
+}
+/* line 25, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .signin-header-info .signin-header-points {
+  font-size: .933em;
+}
+/* line 28, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .signin-header-info .btn-signin {
+  width: 3.93333rem;
+  padding-top: .6em;
+  padding-bottom: .6em;
+  border-radius: 0.13333rem;
+  color: #fff;
+  background-color: #fabf48;
+  border-color: #fabf48;
+}
+/* line 34, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .signin-header-info .btn-signin > .num {
+  margin-left: .3em;
+  vertical-align: baseline;
+}
+/* line 40, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .point-exchange {
+  position: relative;
+}
+/* line 42, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .point-exchange .point-exchange-status {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  height: 0.04rem;
+  background-color: currentColor;
+}
+/* line 48, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .point-exchange .point-exchange-status::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: bottom;
+  border-left: 0.10667rem solid transparent;
+  border-right: 0.10667rem solid transparent;
+  border-top: 0 solid currentColor;
+  border-bottom: 0.10667rem solid currentColor;
+  bottom: 0.02667rem;
+  left: 50%;
+}
+/* line 57, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .point-exchange.act-coupon .point-exchange-status {
+  color: #f26522;
+  left: 0;
+}
+/* line 63, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .point-exchange.act-goods .point-exchange-status {
+  color: #14b2f6;
+  left: 50%;
+}
+/* line 69, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-coupon-wrapper,
+.signin-wrapper .exchange-goods-wrapper {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+/* line 73, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-coupon-wrapper .exchange-item-cost,
+.signin-wrapper .exchange-goods-wrapper .exchange-item-cost {
+  font-size: 1.16667em;
+}
+/* line 76, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-coupon-wrapper .exchange-item-market,
+.signin-wrapper .exchange-goods-wrapper .exchange-item-market {
+  color: #999;
+}
+/* line 78, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-coupon-wrapper .exchange-item-market .num,
+.signin-wrapper .exchange-goods-wrapper .exchange-item-market .num {
+  text-decoration: line-through;
+}
+/* line 82, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-coupon-wrapper .btn,
+.signin-wrapper .exchange-goods-wrapper .btn {
+  height: 0.53333rem;
+  line-height: 0.50667rem;
+  padding: 0;
+}
+/* line 86, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-coupon-wrapper .btn > .iconfont,
+.signin-wrapper .exchange-goods-wrapper .btn > .iconfont {
+  vertical-align: top;
+}
+/* line 92, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-coupon-wrapper .exchange-item-cost {
+  color: #f26522;
+}
+/* line 95, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-coupon-wrapper .btn {
+  width: 1.29333rem;
+}
+/* line 99, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-coupon-wrapper .exchanged .btn {
+  color: #999;
+}
+/* line 105, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-goods-wrapper .exchange-item-cost {
+  color: #14b2f6;
+}
+/* line 108, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-goods-wrapper .btn {
+  width: 0.66667rem;
+  font-size: 1.41667em;
+}
+/* line 113, ../../../sass/h5/member/signin.scss */
+.signin-wrapper .exchange-goods-wrapper .exchanged .btn {
+  color: #999;
+}
+
+/* line 120, ../../../sass/h5/member/signin.scss */
+.dialog.dialog-signin {
+  width: 6.33333rem;
+  height: 6.26667rem;
+  font-size: 1.08333em;
+  text-align: center;
+  background: url("../../../images/member/signin-dialog.png") no-repeat;
+  background-size: contain;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 128, ../../../sass/h5/member/signin.scss */
+.dialog.dialog-signin .close, .dialog.dialog-signin .dialog-signin-title, .dialog.dialog-signin .dialog-signin-info {
+  position: absolute;
+}
+/* line 131, ../../../sass/h5/member/signin.scss */
+.dialog.dialog-signin .dialog-signin-title, .dialog.dialog-signin .dialog-signin-info {
+  left: 0;
+  right: 0;
+}
+/* line 135, ../../../sass/h5/member/signin.scss */
+.dialog.dialog-signin .close {
+  top: -.1em;
+  right: 0;
+  width: .9rem;
+  height: .9rem;
+  margin-right: 0.34667rem;
+}
+/* line 142, ../../../sass/h5/member/signin.scss */
+.dialog.dialog-signin .dialog-signin-title {
+  bottom: 2rem;
+  font-size: 1.30769em;
+  color: #00ceb8;
+}
+/* line 146, ../../../sass/h5/member/signin.scss */
+.dialog.dialog-signin .dialog-signin-title > .num {
+  margin-left: .2em;
+}
+/* line 148, ../../../sass/h5/member/signin.scss */
+.dialog.dialog-signin .dialog-signin-info {
+  bottom: 0.44rem;
+  height: 1.12rem;
+  line-height: 1.12rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 155, ../../../sass/h5/member/signin.scss */
+.point-exchange .btn-group-justified {
+  padding: 0.26667rem 0 0.2rem;
+}
+/* line 159, ../../../sass/h5/member/signin.scss */
+.point-exchange .btn {
+  height: 1.66667rem;
+}
+/* line 161, ../../../sass/h5/member/signin.scss */
+.point-exchange .btn::before {
+  content: '';
+  display: inline-block;
+  margin-right: 0.26667rem;
+  width: 0.93333rem;
+  height: 0.93333rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+/* line 172, ../../../sass/h5/member/signin.scss */
+.point-exchange .point-exchange-coupon::before {
+  background: url("../../../images/member/icon-coupon-2.png") no-repeat;
+  background-size: contain;
+}
+/* line 178, ../../../sass/h5/member/signin.scss */
+.point-exchange .point-exchange-goods::before {
+  background: url("../../../images/member/icon-gift.png") no-repeat;
+  background-size: contain;
+}
+/* line 183, ../../../sass/h5/member/signin.scss */
+.point-exchange .btn-inner {
+  display: inline-block;
+  text-align: left;
+}
+/* line 186, ../../../sass/h5/member/signin.scss */
+.point-exchange .btn-inner .title {
+  font-size: 1.16667em;
+  line-height: 1.5;
+}
+/* line 190, ../../../sass/h5/member/signin.scss */
+.point-exchange .btn-inner .note {
+  color: #999;
+}

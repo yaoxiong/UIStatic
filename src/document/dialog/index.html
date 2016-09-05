@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮</title>
+    <link rel="stylesheet" href="../../css/oEcstore.css">
+    <!-- <link rel="stylesheet" href="../../css/oecstore/dialog.css"> -->
+    <link rel="stylesheet" href="dialog_test.css">
+</head>
+<body>
+<div class="blur">
+    <p>timeling heteroplasm Aedes bricklining banditti masculofeminine overcharitably Azimech Rubia excitor lymphodermia lipoidal gonomere punchinello Ammodytidae camelishness leucitite burin galipoidin normalism Carlos bunchberry Cinura ketimidedrisk Almohade interleaf curlpaper ichthyophagist metacymene unluxuriant forebodingness interdict sterigma cynocrambaceous roughdraft Otomian predoubt englacial Baganda procombination coequalize inexpugnableness sectarian Saba cyanoplatinite polyprothetic draymanchondrification hurrier Dermatocoptes apotropaism odontophorine counternotice loquacious bestrapped plaintively immechanical weekwam harborer hiation edacity popess Saran diclinous Osteichthyes oscillatively overblow suppletion revitalizer griffinage tartantimeling heteroplasm Aedes bricklining banditti masculofeminine overcharitably Azimech Rubia excitor lymphodermia lipoidal gonomere punchinello Ammodytidae camelishness leucitite burin galipoidin normalism Carlos bunchberry Cinura ketimidedrisk Almohade interleaf curlpaper ichthyophagist metacymene unluxuriant forebodingness interdict sterigma cynocrambaceous roughdraft Otomian predoubt englacial Baganda procombination coequalize inexpugnableness sectarian Saba cyanoplatinite polyprothetic draymanchondrification hurrier Dermatocoptes apotropaism odontophorine counternotice loquacious bestrapped plaintively immechanical weekwam harborer hiation edacity popess Saran diclinous Osteichthyes oscillatively overblow suppletion revitalizer griffinage tartan</p>
+</div>
+
+    <div class="mask"></div>
+    <!-- picker-slot 为数据列表 最多支持3列 默认居中 -->
+    <!-- 当有两列时，可使用picker-slot-left 与 picker-slot-right 实现整体居中-->
+    <!-- picker-slot-divider 为分隔符 供特别定制 -->
+    <!-- picker-center-highlight 为分隔线 用来标识选中的数据 -->
+    <div class="dialog dialog-picker on">
+        <div class="dialog-header">
+            <div class="fl"><span class="dialog-cancel">取消</span></div>
+            <div class="fr"><span>清除</span><span class="dialog-confirm">确定</span></div>
+        </div>
+        <div class="dialog-main">
+            <div class="picker">
+                <div class="picker-slot picker-slot-left">
+                    <ul class="picker-slot-wrapper">
+                        <li class="picker-item">办公用品</li>
+                        <li class="picker-item">商品清单</li>
+                        <li class="picker-item picker-selected">电器</li>
+                        <li class="picker-item">电器</li>
+                        <li class="picker-item">其他</li>
+                    </ul>
+                </div>
+                <!-- <div class="picker-slot-divider">
+                    <div>-</div>
+                </div> -->
+                <div class="picker-slot picker-slot-right">
+                    <ul class="picker-slot-wrapper">
+                        <li class="picker-item">办公用品</li>
+                        <li class="picker-item">商品清单</li>
+                        <li class="picker-item picker-selected">电器</li>
+                        <li class="picker-item">电器</li>
+                        <li class="picker-item">其他</li>
+                        <li class="picker-item">其他</li>
+                        <li class="picker-item">其他</li>
+                    </ul>
+                </div>
+                <!-- <div class="picker-slot picker-slot-center">
+                    <ul class="picker-slot-wrapper">
+                        <li class="picker-item">办公用品</li>
+                        <li class="picker-item">商品清单</li>
+                        <li class="picker-item picker-selected">电器</li>
+                        <li class="picker-item">电器</li>
+                        <li class="picker-item">其他</li>
+                    </ul>
+                </div> -->
+                <div class="picker-center-highlight"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="popup">请先选择商品规格</div> -->
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/flexible.js"></script>
+    <script>
+    var open = function(){
+        $('.dialog').addClass('on');
+    }
+    var close = function(){
+        $('.dialog').removeClass('on'); 
+    }
+    </script>
+</body>
+</html>

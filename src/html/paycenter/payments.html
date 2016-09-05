@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单提交</title>
+    <script src="../../../dest/js/flexible.js"></script>
+    <link rel="stylesheet" href="../../../dest/css/oEcstore.css">
+    <link rel="stylesheet" href="../../../dest/css/h5/paycenter/payments.css">
+</head>
+<body>
+<div class="layout-page both-layout-page payments">
+    <div class="top-nav text-center">
+        <div class="layout-title">
+            <div class="title-left">
+                <a href="#" class="title-back">
+                    <i class="iconfont iconfont-angle-left"></i>
+                </a>
+            </div>
+            <div class="title-content">订单提交</div>
+            <div class="title-right">
+                <div class="title-more">
+                    <i class="iconfont iconfont-ellipsis-v"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout-content payments-wrapper">
+        <div class="payments-content well">
+            <!-- 三种状态 been,done,failed -->
+            <div class="payments-status flex-row-between flex-center done">
+                <div class="-col-left">
+                    <!-- 提交完成 -->
+                    <i class="iconfont iconfont-circle-check"></i>
+                    <!-- 支付失败 -->
+                    <i class="iconfont iconfont-circle-alarm"></i>
+                    <!-- 支付等待 -->
+                    <i class="iconfont iconfont-circle-clock"></i>
+                </div>
+                <div class="payments-info -col-content">
+                    <!-- 提交完成 -->
+                    <p class="payments-info-title">订单提交完成</p>
+                    <p class="payments-info-note">请您尽快支付，完成交易</p>
+                    <p class="payments-info-domain">
+                        <a class="btn btn-default btn-outline btn-order-detail" href="#">订单详情</a>
+                    </p>
+                </div>
+            </div>
+            <div class="payments-detail-list">
+                <ul>
+                    <li class="payments-detail-item">
+                        <p class="-col-key">优惠金额</p>
+                        <p class="-col-value">-¥32.00</p>
+                    </li>
+                    <li class="payments-detail-item highlight">
+                        <p class="-col-key">订单金额</p>
+                        <p class="-col-value">-¥32.00</p>
+                    </li>
+                    <li class="payments-detail-item">
+                        <p class="-col-key">预存款金额</p>
+                        <p class="-col-value">-¥32.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="payments-detail-list">
+                <ul>
+                    <li class="payments-detail-item">
+                        <p class="-col-key">支付方式</p>
+                        <p class="-col-value">预存款支付</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="well payments-branch">
+            <div class="payments-detail-list">
+                <ul>
+                    <li class="payments-detail-item">
+                        <div class="-col-key">预约门店：</div>
+                        <div class="-col-value">智慧门店</div>
+                    </li>
+                    <li class="payments-detail-item highlight">
+                        <div class="-col-key">预约时间：</div>
+                        <div class="-col-value">2016.12.12 12:00</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="payments-detail-list">
+                <ul>
+                    <li class="payments-detail-item">
+                        <div class="-col-key">门店地址：</div>
+                        <div class="-col-value flex-row-between flex-center">
+                            <div class="-col-content">
+                                上海徐汇区桂林路396号浦原科技2号楼商派大厦(&lt;500m)
+                            </div>
+                            <div class="-col-right">
+                                <i class="iconfont iconfont-location-arrow"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+        <div class="mask"></div>
+        <!-- 密码有误 error 类 -->
+        <div class="dialog dialog-center dialog-password on error">
+            <div class="close"><i class="iconfont iconfont-error"></i></div>
+            <div class="dialog-header">
+                <p class="dialog-password-title">请输入支付密码</p>
+            </div>
+            <div class="dialog-main">
+                <div class="dialog-password-money text-nowrap">
+                    ¥ 350.05
+                </div>
+                <div class="dialog-password-info">
+                    <p class="balance-money">预存款余额:<span class="price">¥ 130.00</span></p>
+                    <p class="surplus-order"><span class="price">剩余 ¥ 215.00</span>可通过其他支付方式支付</p>
+                </div>
+                <div class="dialog-password-ipts-warp">
+                    <div class="btn-group-justified btn-outline">
+                        <div class="btn btn-default">
+                            <input type="password" maxlength="1">
+                        </div>
+                        <div class="btn btn-default">
+                            <input type="password" maxlength="1">
+                        </div>
+                        <div class="btn btn-default">
+                            <input type="password" maxlength="1">
+                        </div>
+                        <div class="btn btn-default">
+                            <input type="password" maxlength="1">
+                        </div>
+                        <div class="btn btn-default">
+                            <input type="password" maxlength="1">
+                        </div>
+                        <div class="btn btn-default">
+                            <input type="password" maxlength="1">
+                        </div>
+                    </div>
+                    <!-- <ul class="dialog-password-ipts">
+                        <li class="password-ipts-item"><input type="password" maxlength="1"></li>
+                        <li class="password-ipts-item"><input type="password" maxlength="1"></li>
+                        <li class="password-ipts-item"><input type="password" maxlength="1"></li>
+                        <li class="password-ipts-item"><input type="password" maxlength="1"></li>
+                        <li class="password-ipts-item"><input type="password" maxlength="1"></li>
+                        <li class="password-ipts-item"><input type="password" maxlength="1"></li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    <!-- 立即支付按钮 -->
+    <div class="bottom-nav">
+        <div class="btn-payment btn btn-block btn-primary-light">立即支付</div>
+    </div>
+</div>
+
+</body>
+</html>

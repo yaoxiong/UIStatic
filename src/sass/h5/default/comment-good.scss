@@ -1,0 +1,28 @@
+@import "../../oecstore/init.scss";
+
+.comment-good{
+    &.layout-page.top-layout-page{
+        padding-top: $top-nav-height + px2rem(100px);
+    }
+    .layout-nav{
+        height:px2rem(100px);
+    }
+    // 评论关键词
+    .comment-good-tips{
+        padding: px2rem(15px) px2rem(25px);
+        overflow:hidden;
+        .comment-good-tips-item{
+            float:left;
+            display:inline-block;
+            padding: px2rem(8px) px2rem(18px);
+            margin: px2rem(5px);
+            border:1px solid $border-color;
+            @include border-radius(px2rem(5px));
+            color: rgb(102,102,102);
+            &.active{
+                border-color: currentColor;
+                color:#fabd3d;
+            }
+        }
+    }
+}

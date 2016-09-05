@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单支付</title>
+    <script src="../../../dest/js/flexible.js"></script>
+    <link rel="stylesheet" href="../../../dest/css/oEcstore.css">
+    <link rel="stylesheet" href="../../../dest/css/h5/paycenter/payments.css">
+</head>
+<body>
+<div class="layout-page top-layout-page payments">
+    <div class="top-nav text-center">
+        <div class="layout-title">
+            <div class="title-left">
+                <a href="#" class="title-back">
+                    <i class="iconfont iconfont-angle-left"></i>
+                </a>
+            </div>
+            <div class="title-content">订单支付</div>
+            <div class="title-right">
+                <div class="title-more">
+                    <i class="iconfont iconfont-ellipsis-v"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout-content payments-wrapper">
+        <div class="payments-content well">
+            <!-- 三种状态 been,done,failed -->
+            <div class="payments-status flex-row-between flex-center done">
+                <div class="-col-left">
+                    <!-- 提交完成 -->
+                    <i class="iconfont iconfont-circle-check"></i>
+                    <!-- 支付失败 -->
+                    <i class="iconfont iconfont-circle-alarm"></i>
+                    <!-- 支付等待 -->
+                    <i class="iconfont iconfont-circle-clock"></i>
+                </div>
+                <div class="payments-info -col-content">
+                    <!-- 提交完成 -->
+                    <p class="payments-info-title">订单提交完成</p>
+                    <p class="payments-info-note">请您尽快支付，完成交易</p>
+                    <p class="payments-info-domain">
+                        <a class="btn btn-default btn-outline btn-order-detail" href="#">订单详情</a>
+                    </p>
+                </div>
+            </div>
+            <div class="payments-detail-list">
+                <ul>
+                    <li class="payments-detail-item">
+                        <p class="-col-key">优惠金额</p>
+                        <p class="-col-value">-¥32.00</p>
+                    </li>
+                    <li class="payments-detail-item highlight">
+                        <p class="-col-key">订单金额</p>
+                        <p class="-col-value">-¥32.00</p>
+                    </li>
+                    <li class="payments-detail-item">
+                        <p class="-col-key">预存款金额</p>
+                        <p class="-col-value">-¥32.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="payments-detail-list">
+                <ul>
+                    <li class="payments-detail-item">
+                        <p class="-col-key">支付方式</p>
+                        <p class="-col-value">预存款支付</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 请选择支付方式 -->
+        <!-- close类关闭支付选择 -->
+        <div class="well payment-type">
+            <div class="payment-type-header flex-row-between flex-center">
+                <div class="-col-content">请选择其他支付方式</div>
+                <div class="-col-right">
+                    <div class="btn-toggle">
+                        <i class="iconfont iconfont-angle-up"></i>    
+                    </div>
+                </div>
+            </div>
+            <div class="payment-type-wrapper">
+                <ul class="payment-type-list">
+                    <li class="payment-type-item flex-row-between flex-center">
+                        <div class="payment-type-item-checkbox checkbox">
+                            <input type="checkbox" id="invoice1"><label for="invoice1"></label>
+                        </div>
+                        <div class="payment-type-item-img">
+                            <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                        </div>
+                        <div class="-col-content">
+                            <div class="payment-type-item-info">
+                                <p class="title">微信支付</p>
+                                <p class="tip">推荐已安装微信客户端的用户使用</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="payment-type-item flex-row-between flex-center">
+                        <div class="payment-type-item-checkbox checkbox">
+                            <input type="checkbox" id="invoice1"><label for="invoice1"></label>
+                        </div>
+                        <div class="payment-type-item-img">
+                            <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                        </div>
+                        <div class="-col-content">
+                            <div class="payment-type-item-info">
+                                <p class="title">微信支付</p>
+                                <p class="tip">推荐已安装微信客户端的用户使用</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="payment-type-item flex-row-between flex-center">
+                        <div class="payment-type-item-checkbox checkbox">
+                            <input type="checkbox" id="invoice1"><label for="invoice1"></label>
+                        </div>
+                        <div class="payment-type-item-img">
+                            <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                        </div>
+                        <div class="-col-content">
+                            <div class="payment-type-item-info">
+                                <p class="title">微信支付</p>
+                                <p class="tip">推荐已安装微信客户端的用户使用</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ecommend-wrapper">
+            <div class="goods-brief-wrapper">
+                <p class="line-text"><span>为您精选</span></p>
+                <!--  默认2列布局，3列请加column-3类-->
+                <ul class="goods-brief-list clearfix column-2">
+                    <li class="goods-brief-item">
+                        <a href="">
+                            <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                            <div class="goods-brief-info">
+                                <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                                <p class="goods-brief-price">￥179</p>
+                                <p class="goods-brief-note">
+                                    <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                    <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="goods-brief-item">
+                        <a href="">
+                            <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                            <div class="goods-brief-info">
+                                <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                                <p class="goods-brief-price">￥179</p>
+                                <p class="goods-brief-note">
+                                    <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                    <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="goods-brief-item">
+                        <a href="">
+                            <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                            <div class="goods-brief-info">
+                                <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                                <p class="goods-brief-price">￥179</p>
+                                <p class="goods-brief-note">
+                                    <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                    <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="goods-brief-item">
+                        <a href="">
+                            <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                            <div class="goods-brief-info">
+                                <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                                <p class="goods-brief-price">￥179</p>
+                                <p class="goods-brief-note">
+                                    <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                    <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="goods-brief-item">
+                        <a href="">
+                            <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                            <div class="goods-brief-info">
+                                <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                                <p class="goods-brief-price">￥179</p>
+                                <p class="goods-brief-note">
+                                    <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                    <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="goods-brief-item">
+                        <a href="">
+                            <div class="goods-brief-img"><img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt=""></div>
+                            <div class="goods-brief-info">
+                                <p class="goods-brief-title">费列罗榛果威化巧克力</p>
+                                <p class="goods-brief-price">￥179</p>
+                                <p class="goods-brief-note">
+                                    <span class="goods-brief-appraise">好评率<span class="val">79%</span></span>
+                                    <span class="goods-brief-count">已有<span class="val">34567</span>人购买</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

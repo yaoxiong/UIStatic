@@ -1,0 +1,22 @@
+/* line 4, ../../../sass/h5/default/payMentent.scss */
+.order-payment .order-payment-info-content {
+  height: 1.73333rem;
+  line-height: 1.73333rem;
+  padding-left: 0.4rem;
+  font-weight: bold;
+}
+/* line 9, ../../../sass/h5/default/payMentent.scss */
+.order-payment .order-payment-info-content > * {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 13, ../../../sass/h5/default/payMentent.scss */
+.order-payment .order-payment-info-content .iconfont {
+  font-size: 2.16667em;
+  color: #ef7b2e;
+  margin-right: 0.4rem;
+}
+/* line 18, ../../../sass/h5/default/payMentent.scss */
+.order-payment .order-payment-info-content .order-payment-price {
+  font-size: 1.5em;
+}

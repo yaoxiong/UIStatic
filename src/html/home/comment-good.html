@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品评论</title>
+    <link rel="stylesheet" href="../../../dest/css/oEcstore.css">
+    <link rel="stylesheet" href="../../../dest/css/h5/default/comment-good.css">
+    <script src="../lib/jquery.js"></script>
+    <script src="../../../dest/js/flexible.js"></script>
+</head>
+<body>
+    <div class="layout-page top-layout-page comment-good">
+        <!-- 商品评论标题 -->
+        <div class="top-nav text-center">
+            <div class="layout-title comment-good-title">
+                <div class="title-left">
+                    <a href="#" class="title-back">
+                        <i class="iconfont iconfont-angle-left"></i>
+                    </a>
+                </div>
+                <div class="title-content">
+                    商品评论
+                </div>
+            </div>
+            <!-- data-length 导航列表长度 data-act 选中列表序号，从1开始-->
+            <div class="layout-nav" data-length="5" data-act="1">
+                <ul class="btn-group-justified">
+                    <li class="btn btn-link">
+                        <p class="layout-nav-info">全部</p>
+                        <p class="layout-nav-value">120</p>
+                    </li>
+                    <li class="btn btn-link">
+                        <p class="layout-nav-info">好评</p>
+                        <p class="layout-nav-value">60</p>
+                    </li>
+                    <li class="btn btn-link">
+                        <p class="layout-nav-info">中评</p>
+                        <p class="layout-nav-value">50</p>
+                    </li>
+                    <li class="btn btn-link">
+                        <p class="layout-nav-info">差评</p>
+                        <p class="layout-nav-value">10</p>
+                    </li>
+                    <li class="btn btn-link">
+                        <p class="layout-nav-info">有图</p>
+                        <p class="layout-nav-value">10</p>
+                    </li>
+                </ul>
+                <div class="layout-nav-status"></div>
+            </div>
+        </div>
+        <div class="layout-content comment-good-wrapper">
+            <!-- 评论关键词 -->
+            <div class="comment-good-tips well">
+                <span class="comment-good-tips-item">嘻哈(53)</span>
+                <span class="comment-good-tips-item">欧美系(23)</span>
+                <span class="comment-good-tips-item  active">时尚(253)</span>
+                <span class="comment-good-tips-item">高贵优雅(253)</span>
+                <span class="comment-good-tips-item">蠢萌蠢萌(3)</span>
+                <span class="comment-good-tips-item">少女系(253)</span>
+                <span class="comment-good-tips-item">嘻哈(253)</span>
+                <span class="comment-good-tips-item">欧美系(253)</span>
+                <span class="comment-good-tips-item">时尚(3)</span>
+                <span class="comment-good-tips-item">漂亮(25)</span>
+            </div>
+            <!-- 评论列表 -->
+            <div class="comment-good-list">
+                <div class="well comment-good-item">
+                    <div class="comment-good-item-type">
+                        门店
+                    </div>
+                    <div class="comment-good-item-header flex-row-between flex-center">
+                        <div class="-col-left">
+                            <div class="comment-good-item-avatar"><img src="../../../dest/images/detail/detail-image3.png" alt=""></div>
+                        </div>
+                        <div class="-col-content">会飞的猪筅森</div>
+                        <div class="-col-right">
+                            <div class="scores-wrapper scores-4">
+                                <div class="scores-empty-stars">
+                                    <i class="iconfont iconfont-star-o"></i><i class="iconfont iconfont-star-o"></i><i class="iconfont iconfont-star-o"></i><i class="iconfont iconfont-star-o"></i><i class="iconfont iconfont-star-o"></i>
+                                </div>
+                                <div class="scores-stars">
+                                    <div class="scores-star-wrapper"><i class="iconfont iconfont-star"></i><i class="iconfont iconfont-star"></i><i class="iconfont iconfont-star"></i><i class="iconfont iconfont-star"></i><i class="iconfont iconfont-star"></i>
+                                    </div>
+                                </div>
+                                <div class="scores-value">
+                                    <span class="scores-int">7</span><span class="scores-dot">.</span><span class="scores-decimal">9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-good-item-main">
+                        <div class="comment-good-item-description">服务不错质量也好，是正品，样式潮流，愉快的购物体验</div>
+                        <div class="comment-good-item-images">
+                            <img src="../../../dest/images/detail/detail-image2.png" alt="">
+                            <img src="../../../dest/images/detail/detail-image2.png" alt="">
+                            <img src="../../../dest/images/detail/detail-image2.png" alt="">
+                        </div>
+                        <div class="comment-good-item-domain flex-row-between flex-center">
+                            <div class="-col-content">
+                                <div class="comment-good-item-date">2016-02-19 19:20</div>
+                            </div>
+                            <div class="-col-right">
+                                <div class="comment-good-item-favorite">
+                                    <i class="iconfont iconfont-heart"></i>
+                                    <span class="num">13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-good-item-reply">
+                        <ul class="reply-list">
+                            <li class="reply-item flex-row-between flex-center">
+                                <div class="-col-content">
+                                    <span>王小二</span>：<span>我也买了一双，还不错，你是怎么分辨正品的</span>
+                                </div>
+                            </li>
+                            <li class="reply-item flex-row-between flex-center">
+                                <div class="-col-content">
+                                    <span>王小二</span>：<span>我也买了一双，还不错，你是怎么分辨正品的</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="well comment-good-item">
+                    <div class="comment-good-item-type">
+                        门店
+                    </div>
+                    <div class="comment-good-item-header flex-row-between flex-center">
+                        <div class="-col-left">
+                            <div class="comment-good-item-avatar"><img src="../../../dest/images/detail/detail-image3.png" alt=""></div>
+                        </div>
+                        <div class="-col-content">会飞的猪筅森</div>
+                        <div class="-col-right">
+                            <div class="scores-wrapper scores-4">
+                                <div class="scores-empty-stars">
+                                    <i class="iconfont iconfont-star-o"></i><i class="iconfont iconfont-star-o"></i><i class="iconfont iconfont-star-o"></i><i class="iconfont iconfont-star-o"></i><i class="iconfont iconfont-star-o"></i>
+                                </div>
+                                <div class="scores-stars">
+                                    <div class="scores-star-wrapper"><i class="iconfont iconfont-star"></i><i class="iconfont iconfont-star"></i><i class="iconfont iconfont-star"></i><i class="iconfont iconfont-star"></i><i class="iconfont iconfont-star"></i>
+                                    </div>
+                                </div>
+                                <div class="scores-value">
+                                    <span class="scores-int">7</span><span class="scores-dot">.</span><span class="scores-decimal">9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-good-item-main">
+                        <div class="comment-good-item-description">服务不错质量也好，是正品，样式潮流，愉快的购物体验</div>
+                        <div class="comment-good-item-images">
+                            <img src="../../../dest/images/detail/detail-image2.png" alt="">
+                            <img src="../../../dest/images/detail/detail-image2.png" alt="">
+                            <img src="../../../dest/images/detail/detail-image2.png" alt="">
+                        </div>
+                        <div class="comment-good-item-domain flex-row-between flex-center">
+                            <div class="-col-content">
+                                <div class="comment-good-item-date">2016-02-19 19:20</div>
+                            </div>
+                            <div class="-col-right">
+                                <div class="comment-good-item-favorite">
+                                    <i class="iconfont iconfont-heart"></i>
+                                    <span class="num">13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

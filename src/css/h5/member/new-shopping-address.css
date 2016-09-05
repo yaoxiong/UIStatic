@@ -1,0 +1,12 @@
+/* line 4, ../../../sass/h5/member/new-shopping-address.scss */
+.edit-shopping-address .form-group-wrapper, .new-shopping-address .form-group-wrapper {
+  margin-top: 0.26667rem;
+  margin-bottom: 0.26667rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+/* line 11, ../../../sass/h5/member/new-shopping-address.scss */
+.edit-shopping-address .form-wrapper .well, .new-shopping-address .form-wrapper .well {
+  margin-left: 0;
+  margin-right: 0;
+}

@@ -1,0 +1,117 @@
+@import "../../oecstore/init.scss";
+/*--------------------- 充值 ---------------------*/
+
+.deposit-wrapper{
+    .form-group-wrapper{
+        margin: px2rem($gap*2) px2rem($gap);
+        padding: 0;
+        .form-group{
+            padding:px2rem(15px) 0;
+            .iconfont{
+                font-size: 1.5em;
+                padding-left: 0;
+                padding-right: 0.8em;
+            }
+        }
+        .input-group-control{
+            padding-left:px2rem(30px);
+            font-size: px2em(15px);
+        }
+    }
+    .payment-type-header{
+        font-weight:normal;
+    }
+    .payment-type-list{
+        padding:px2rem(20px) 0;
+    }
+    .deposit-submit{
+        margin-top: px2rem(30px);
+    }
+}
+
+/* ------------------- dialog 基础样式 ------------------- */
+
+.dialog-deposit{
+    width:px2rem(444px);
+    height:auto;
+    border-radius:px2rem(30px);
+    text-align:center;
+    .close{
+        top: px2rem(15px);
+        right: px2rem(15px);
+        font-size: 2.5em;
+    }
+    .dialog-main{
+        position: relative;
+        padding-top: px2rem(65px);
+        padding-bottom: px2rem(40px);
+
+    }
+    .dialog-deposit-status{
+        margin-bottom: px2rem(70px);
+    }
+    .dialog-deposit-mark{
+        margin: 0 auto; 
+        width: px2rem(90px);
+        height: px2rem(90px);
+        font-size: px2rem(90px);
+        
+    }
+    .dialog-deposit-title{
+        margin-top: px2rem(20px);
+        font-size: px2rem(30px);
+    }
+    .dialog-deposit-info{
+        font-size: px2rem(24px);
+        .money{
+            color:$oec-primary-light;
+        }
+    }
+    .dialog-deposit-subinfo{
+        margin-top: px2rem(45px);
+        line-height: 1.2;
+        .money{
+            padding-left: px2em(11px);
+        }
+    }
+    .dialog-footer{
+        height: px2rem(80px);
+        bottom: 0;
+        .btn{
+            padding: 0;
+            margin: 0;
+            height:100%;
+            line-height: px2rem(78px);
+            font-size: px2em(15px);
+            border-width: 0;
+            color:#fff;
+            @include border-radius(0px);
+        }
+    }
+    &.success{
+        .dialog-deposit-mark{
+            color:$brand-success;
+        }
+        .btn-recharge,.iconfont-circle-alarm{
+            display:none;
+        }
+        .dialog-footer{
+            .btn{
+                background-color:$brand-success;
+            }
+        }
+    }
+    &.error{
+        .dialog-deposit-mark{
+            color:$brand-danger;
+        }
+        .btn-log,.iconfont-circle-check{
+            display:none;
+        }
+        .dialog-footer{
+            .btn{
+                background-color:$brand-danger;
+            }
+        }
+    }
+}

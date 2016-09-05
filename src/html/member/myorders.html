@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="../../../dest/css/oEcstore.css">
+    <link rel="stylesheet" href="../../../dest/css/h5/member/myorders.css">
+    <script src="../lib/jquery.js"></script>
+    <script src="../../../dest/js/flexible.js"></script>
+</head>
+<body>
+    <div class="layout-page both-layout-page myorders">
+        <!-- 我的订单标题 -->
+        <div class="top-nav text-center">
+            <div class="layout-title myorders-title">
+                <div class="title-left">
+                    <a href="#" class="title-back">
+                        <i class="iconfont iconfont-angle-left"></i>
+                    </a>
+                </div>
+                <div class="title-content">
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary-light btn-outline">配送订单</a>
+                        <a href="#" class="btn btn-primary-light">自提订单</a>
+                    </div>
+                </div>
+                <div class="title-right"><i class="iconfont iconfont-ellipsis-v"></i></div>
+            </div>
+            <!-- data-length 导航列表长度 data-act 选中列表序号，从1开始-->
+            <div class="layout-nav" data-length="4" data-act="1">
+                <ul class="btn-group-justified">
+                    <li class="btn btn-link btn-orders-total">
+                        <p class="layout-nav-info">
+                            全部订单
+                        </p>
+                    </li>
+                    <li class="btn btn-link btn-orders-topay">
+                        <p class="layout-nav-info">
+                            待支付
+                        </p>
+                    </li>
+                    <li class="btn btn-link btn-orders-tocheck">
+                        <p class="layout-nav-info">
+                            待收货
+                        </p>
+                    </li>
+                    <li class="btn btn-link btn-orders-tocomment">
+                        <p class="layout-nav-info">
+                            待评价
+                        </p>
+                    </li>
+                </ul>
+                <div class="layout-nav-status"></div>
+            </div>
+        </div>
+        <div class="layout-content myorders-wrapper ">
+            <!-- 我的订单列表 -->
+            <div class="orders-list">
+                <!-- 默认订单3种状态 done,been,error 更多状态自行定义-->
+                <!-- orders-store, order-shop 分别代表商城和门店 -->
+                <!-- 我的订单6种状态 待支付 备货中 待收货 待自提 待评价 已完成 分别用
+                order-status-pay 
+                order-status-stockup 
+                order-status-receive 
+                order-status-pickup
+                order-status-appraise 
+                order-status-done -->
+                <div class="well orders-item orders-store order-status-done">
+                    <div class="orders-item-header flex-row-between flex-center">
+                        <div class="-col-content line-nowrap">
+                            <i class="iconfont iconfont-clock"></i>
+                            <span class="orders-item-time">2016.02.13 12:30:24</span>
+                            <div class="orders-item-tip">
+                                <span class="orders-item-tip-shop"></span>
+                                <span class="orders-item-tip-store"></span>
+                            </div>
+                        </div>
+                        <div class="-col-right">
+                            <span class="orders-item-state">已完成</span>
+                        </div>
+                    </div>
+                    
+                    <div class="orders-item-content">
+                        <a href="#">
+                            <div class="flex-row-between flex-stretch orders-item-brief">
+                                <div class="-col-left orders-item-img">
+                                    <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                                </div>
+                                <div class="-col-content">
+                                    <div class="flex-cloumn-between">
+                                        <div class="orders-item-title line-clamp">
+                                            2016春季精品 adidas高邦运动跑鞋由我创 造快我所快、超跑运动
+                                        </div>
+                                        <div class="-cloumn-bottom line-nowrap">
+                                            <span class="orders-item-price">价格<span class="val">￥79.00</span></span>
+                                            <span class="orders-item-count"><span class="val">1</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="orders-item-imgs-list">
+                                <ul>
+                                    <li class="orders-item-img">
+                                        <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                                    </li>
+                                    <li class="orders-item-img">
+                                        <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                                    </li>
+                                    <li class="orders-item-img">
+                                        <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                                    </li>
+                                    <div class="orders-item-img orders-item-img-more">
+                                        <i class="iconfont iconfont-ellipsis-v"></i>
+                                    </div>
+                                </ul>
+                            </div> -->
+                        </a>
+                        
+                    </div>
+                    <div class="orders-item-footers">
+                        <div class="flex-row-between flex-center orders-item-checkout">
+                            <div class="-col-content">
+                                <span class="orders-item-total-count">商品数量：<span class="val">1</span></span>
+                                <span class="orders-item-total-price">总金额：<span class="val">￥79.00</span></span>
+                            </div>
+                            <div class="-col-right btn-outline">
+                                <a href="#" class="btn btn-primary-dark btn-order-cancel">取消订单</a>
+                                <a href="#" class="btn btn-primary-light btn-order-pay">立即支付</a>
+                                <a href="#" class="btn btn-primary-dark btn-order-logistic">查看物流</a>
+                                <a href="#" class="btn btn-primary-light btn-order-receive">确认收货</a>
+                                <a href="#" class="btn btn-primary-light btn-order-appraise">立即评价</a>
+                                <a href="#" class="btn btn-primary-light btn-order-changeshop">更换门店</a>
+                                <a href="#" class="btn btn-primary-light btn-order-pickupcode">提货码</a>
+                            </div>
+                        </div>
+                        <div class="orders-item-others">
+                            <div class="orders-item-appointment">
+                                <div class="-col-key">
+                                    预约时间：
+                                </div>
+                                <div class="-col-value">
+                                    2016.02.13 12:00
+                                </div>
+                            </div>
+                            <div class="orders-item-shopinfo">
+                                <div class="-col-key">
+                                    门店信息：
+                                </div>
+                                <div class="-col-value flex-row-between flex-center">
+                                    <div class="-col-content">智慧门店上海徐汇区桂林路396号铺源科技2 号楼(&lt;500m）</div>
+                                    <a class="-col-right">
+                                        <i class="iconfont iconfont-location-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="well orders-item orders-shop order-status-pay">
+                    <div class="orders-item-header flex-row-between flex-center">
+                        <div class="-col-content line-nowrap">
+                            <i class="iconfont iconfont-clock"></i>
+                            <span class="orders-item-time">2016.02.13 12:30:24</span>
+                            <div class="orders-item-tip">
+                                <span class="orders-item-tip-shop"></span>
+                                <span class="orders-item-tip-store"></span>
+                            </div>
+                        </div>
+                        <div class="-col-right">
+                            <span class="orders-item-state">待支付</span>
+                        </div>
+                    </div>
+                    
+                    <div class="orders-item-content">
+                        <a href="#">
+                            <div class="orders-item-imgs-list">
+                                <ul>
+                                    <li class="orders-item-img">
+                                        <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                                    </li>
+                                    <li class="orders-item-img">
+                                        <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                                    </li>
+                                    <li class="orders-item-img">
+                                        <img src="../../../dest/images/source/shopping-cart/shopping-cart-image1.png" alt="">
+                                    </li>
+                                    <div class="orders-item-img orders-item-img-more">
+                                        <i class="iconfont iconfont-ellipsis-v"></i>
+                                    </div>
+                                </ul>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="orders-item-footers">
+                        <div class="flex-row-between flex-center orders-item-checkout">
+                            <div class="-col-content">
+                                <span class="orders-item-total-count">商品数量：<span class="val">1</span></span>
+                                <span class="orders-item-total-price">总金额：<span class="val">￥79.00</span></span>
+                            </div>
+                            <div class="-col-right btn-outline">
+                                <a href="#" class="btn btn-primary-dark btn-order-cancel">取消订单</a>
+                                <a href="#" class="btn btn-primary-light btn-order-pay">立即支付</a>
+                                <a href="#" class="btn btn-primary-dark btn-order-logistic">查看物流</a>
+                                <a href="#" class="btn btn-primary-light btn-order-receive">确认收货</a>
+                                <a href="#" class="btn btn-primary-light btn-order-appraise">立即评价</a>
+                                <a href="#" class="btn btn-primary-light btn-order-changeshop">更换门店</a>
+                                <a href="#" class="btn btn-primary-light btn-order-pickupcode">提货码</a>
+                            </div>
+                        </div>
+                        <div class="orders-item-others">
+                            <div class="orders-item-appointment">
+                                <div class="-col-key">
+                                    预约时间：
+                                </div>
+                                <div class="-col-value">
+                                    2016.02.13 12:00
+                                </div>
+                            </div>
+                            <div class="orders-item-shopinfo">
+                                <div class="-col-key">
+                                    门店信息：
+                                </div>
+                                <div class="-col-value flex-row-between flex-center">
+                                    <div class="-col-content">智慧门店上海徐汇区桂林路396号铺源科技2 号楼(&lt;500m）</div>
+                                    <a class="-col-right">
+                                        <i class="iconfont iconfont-location-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- 收货成功弹出框 -->
+    <!-- <div class="mask"></div>
+
+    <div class="myorders-receive-dialog dialog dialog-center on">
+        <div class="close"><i class="iconfont iconfont-error"></i></div>
+        <div class="dialog-header">
+                <div class="myorders-receive-dialog-h1">恭喜您,收货成功！</div>
+                <div class="myorders-receive-dialog-h2">快去给个评价吧</div>
+        </div>
+        <div class="dialog-footer">
+            <div class="btn-receive-dialog-comment btn btn-outline btn-default">立即评价</div>
+        </div>
+    </div> -->
+    <!-- 商品提货码 -->
+    <!-- <div class="mask"></div>
+    <div class="dialog dialog-center dialog-share on">
+        <div class="close">
+            <i class="iconfont iconfont-error"></i>
+        </div>
+        <div class="dialog-head">
+            <div class="line-text"><span>商品提货码</span></div>
+        </div>
+        <div class="share-qrcode-wrapper">
+            <div class="share-barcode">
+                <img src="../../../dest/images/detail/detail-image4.png" alt="">
+            </div>
+            <div class="share-qrcode">
+                <img src="../../../dest/images/member/member-card.png" alt="">
+            </div>
+            <p class="note">将二维码展示给收银员</br>扫一扫完成提货</p>
+        </div>
+    </div> -->
+</body>
+</html>

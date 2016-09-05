@@ -1,0 +1,167 @@
+/* line 5, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-glob {
+  padding: 0.26667rem 0.53333rem;
+  font-size: 1.084em;
+}
+/* line 8, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-glob .iconfont-map-position {
+  font-size: 1.1em;
+  margin-right: 0.53333rem;
+  color: #666;
+}
+/* line 13, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-glob .-col-content {
+  font-size: 1.154em;
+  font-weight: bold;
+  margin-right: 0.13333rem;
+}
+/* line 18, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-glob .btn-toggle {
+  padding-top: .425em;
+  padding-bottom: .425em;
+}
+/* line 23, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-glob.act .iconfont-map-position {
+  color: #ff317a;
+}
+/* line 26, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-glob.act .-col-content {
+  color: #333;
+}
+/* line 30, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-glob.empty {
+  color: #999;
+}
+/* line 32, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-glob.empty .iconfont-map-position {
+  color: inherit;
+}
+/* line 40, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item > div {
+  -moz-box-align: stretch;
+  -webkit-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+/* line 43, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .-col-left {
+  margin: 0.13333rem;
+}
+/* line 46, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .-col-content {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 0.13333rem;
+  padding: 0.13333rem;
+}
+/* line 51, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .-col-right {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 1.49333rem;
+}
+/* line 55, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .nearby-shop-item-img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+/* line 59, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .nearby-shop-item-name {
+  font-size: 1.1667em;
+  font-weight: bold;
+}
+/* line 64, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .nearby-shop-item-shop-time > span {
+  vertical-align: middle;
+}
+/* line 67, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .nearby-shop-item-shop-time .label {
+  padding: 2px .33em;
+  border-radius: 0.06667rem;
+}
+/* line 71, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .nearby-shop-item-shop-time .nearby-shop-item-time-range {
+  margin-left: 0.13333rem;
+}
+/* line 75, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .nearby-shop-item-address {
+  width: 5.04rem;
+  color: #666;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 80, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .nearby-shop-item-nav {
+  width: 100%;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin: 0.46667rem 0;
+  border-left: 1px solid #e1e1e1;
+  color: #666;
+}
+/* line 86, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .nearby-shop-item-nav .iconfont {
+  font-size: 1.5em;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 90, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-list .nearby-shop-item .nearby-shop-item-nav .nearby-shop-item-nav-space {
+  font-size: .916em;
+}
+/* line 96, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-empty {
+  margin-top: 2.73333rem;
+}
+/* line 5, ../../../sass/oecstore/mixins/_empty-style.scss */
+.nearby-shop .nearby-shop-empty .empty-info::before {
+  height: 3.26667rem;
+  background: url("../../../images/source/near-stores-and-details/nearby-stores/nearby-stores-empty.png") no-repeat center;
+  background-size: contain;
+}
+/* line 99, ../../../sass/h5/branch/nearbyShop.scss */
+.nearby-shop .nearby-shop-empty .empty-info::before {
+  margin-bottom: 0.46667rem;
+}

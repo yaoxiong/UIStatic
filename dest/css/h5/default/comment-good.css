@@ -1,0 +1,30 @@
+/* line 4, ../../../sass/h5/default/comment-good.scss */
+.comment-good.layout-page.top-layout-page {
+  padding-top: 2.53333rem;
+}
+/* line 7, ../../../sass/h5/default/comment-good.scss */
+.comment-good .layout-nav {
+  height: 1.33333rem;
+}
+/* line 11, ../../../sass/h5/default/comment-good.scss */
+.comment-good .comment-good-tips {
+  padding: 0.2rem 0.33333rem;
+  overflow: hidden;
+}
+/* line 14, ../../../sass/h5/default/comment-good.scss */
+.comment-good .comment-good-tips .comment-good-tips-item {
+  float: left;
+  display: inline-block;
+  padding: 0.10667rem 0.24rem;
+  margin: 0.06667rem;
+  border: 1px solid #e1e1e1;
+  -moz-border-radius: 0.06667rem;
+  -webkit-border-radius: 0.06667rem;
+  border-radius: 0.06667rem;
+  color: #666666;
+}
+/* line 22, ../../../sass/h5/default/comment-good.scss */
+.comment-good .comment-good-tips .comment-good-tips-item.active {
+  border-color: currentColor;
+  color: #fabd3d;
+}

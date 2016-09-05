@@ -1,0 +1,14 @@
+@import "../../oecstore/init.scss";
+/* ----------------------------- 设置 -------------------------------*/
+.settings-list{
+    .flex-row-between{
+        .-col-left{
+            font-size:px2em(15px);
+        }
+    } 
+    .disabled{
+        .-col-right{
+            visibility: hidden;
+        }
+    }
+}

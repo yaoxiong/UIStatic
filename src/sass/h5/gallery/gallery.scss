@@ -1,0 +1,145 @@
+@import "../../oecstore/init.scss";
+.gallery{
+    &.top-layout-page{
+        padding-top: $top-nav-height + $nav-height;
+    }
+    .sort-triangles-wrapper{
+        display:inline-block;
+        position:relative;
+        top:1px;
+        .triangle{
+            @include triangle(px2em(4px,13px),currentColor,$degree:45deg);
+            display:block;
+            vertical-align:middle;
+            &.triangle-down{
+                @include transform(rotate(180deg));
+            }
+        }
+        .triangle-up{
+            margin-bottom:px2rem(6px);
+        }
+        &.asc{
+            .triangle-up{color:$oec-primary-light;}
+            .triangle-down{color: $gray-light}
+        }
+        &.desc{
+            .triangle-down{color:$oec-primary-light;}
+            .triangle-up{color: $gray-light}
+        }
+    }
+    .btn-goods-list-filter{
+        .triangle-up{
+            color:transparent;
+        }
+    }
+    // 筛选条件
+    @at-root .gallery-filter-wrapper{
+        position: fixed;
+        top: $top-nav-height + $nav-height;
+        left: 0;right:0;
+        height: 100%;
+        padding-bottom:px2rem( 90px + 80px - 1px);
+        background-color: rgb(255,255,255);
+        @at-root .gallery-filter-header{
+            height:px2rem(160px);
+        }
+        @at-root .gallery-filter-footer{
+            height:px2rem(95px);
+            >.btn{
+                @include border-radius(0);
+                font-size:px2em(18px);
+            }
+        }
+        @at-root .gallery-filter-title {
+            border-top:1px solid $border-color;
+            border-bottom:1px solid $border-color;
+            @include height(px2rem(80px));
+            padding-left: px2rem(40px);
+            padding-right: px2rem(40px);
+            &:first-child{
+                border-bottom-width: 0;
+            }
+        }
+        @at-root .gallery-filter-main{
+            overflow:hidden;
+            @at-root .gallery-filter-main-left{
+
+                overflow-y: scroll;
+                -webkit-overflow-scrolling:touch;
+                border-right:1px solid $border-color;
+                .gallery-filter-menu{
+                    position: relative;
+                    width: px2rem(200px);
+                    @include height(px2rem(80px));
+                    padding-left: px2rem(40px);
+                    padding-right: px2rem(45px);
+                    background-color: rgb(245,245,245);
+                    border-bottom:1px solid $border-color;
+                    &.select{
+                        &:after{
+                            @include icon-check();
+                            @include inline-block;
+                            position: absolute;
+                            top: px2rem(30px);
+                            right: px2rem(20px);
+                            font-size:px2em(10px);
+                            width: px2rem(20px);
+                            @include height(px2rem(20px));
+                            color: $oec-primary-light;
+                        }
+                    }
+                    &.active{
+                        background-color: rgb(255,255,255);
+                    }
+                }
+            }
+            @at-root .gallery-filter-main-right{
+                overflow-y: scroll;
+                -webkit-overflow-scrolling:touch;
+                @at-root .gallery-filter-menu-list{
+                    display: none;
+                    padding:px2rem(20px) 0 px2rem(20px) px2rem(20px);
+                    overflow:hidden;
+                    &.active{
+                        display: block;
+                    }
+                    @at-root .gallery-filter-menu-item{
+                        position: relative;
+                        float:left;
+                        width: px2rem(244px);
+                        @include height(px2rem(55px));
+                        margin-bottom: px2rem(20px);
+                        margin-right:px2rem(20px);
+                        @include border-radius(px2rem(3px));
+                        border:2px solid rgb(240,240,240);
+                        [data-dpr="1"] & {
+                            border-width:1px;
+                        }
+                        text-align: center;
+                        background-color: rgb(240,240,240);
+                        // &:nth-child(2n+2){
+                        //     margin-left:0;
+                        // }
+                        &.active{
+                            border-color:currentColor;
+                            background-color: rgb(255,255,255);
+                            color: $oec-primary-light;
+                            &:after{
+                                @include icon-check();
+                                @include inline-block;
+                                position: absolute;
+                                top: px2rem(17px);
+                                right: px2rem(17px);
+                                font-size:px2em(10px);
+                                width: px2rem(20px);
+                                height: px2rem(20px);
+                                line-height: px2rem(20px);
+                                color: currentColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

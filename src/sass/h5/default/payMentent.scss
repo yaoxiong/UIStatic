@@ -1,0 +1,25 @@
+@import "../../oecstore/init.scss";
+.order-payment{
+    // 待支付金额
+    .order-payment-info-content{
+        height: px2rem(130px);
+        line-height: px2rem(130px);
+        padding-left: px2rem(30px);
+        font-weight:bold;
+        >*{
+            display: inline-block;
+            vertical-align:top;
+        }
+        .iconfont{
+            font-size:px2em(26px);
+            color: $brand-warning;
+            margin-right: px2rem(30px);
+        }
+        .order-payment-price{
+            font-size:px2em(18px);
+        }
+    }
+}
+
+
+

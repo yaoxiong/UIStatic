@@ -1,0 +1,108 @@
+@import "../../oecstore/init.scss";
+// 当前位置
+.change-shop-glob{
+    .change-shop-current-name{
+        padding-top: px2rem(20px);
+        padding-bottom: px2rem(20px);
+        padding-left: px2rem(40px);
+        padding-right: px2rem(40px);
+        background-color: rgb(255,255,255);
+        color: $gray;
+        font-size:px2em(13px);
+        .earby-shop-current-name-icoin{
+            margin-right: px2rem(20px);
+            color: $gray;
+        }
+        .-col-content{
+            color: $gray;
+            font-size:px2em(15px);
+            font-weight: bold;
+        }
+        .btn-change-shop-current{
+            @include border-radius(px2rem(5px));
+            font-size:px2em(14px,13px);
+            padding: px2rem(12px) px2rem(20px);
+            border-width:0;
+        }
+        &.active{
+            .earby-shop-current-name-icoin{
+                color: $oec-primary-light;
+            }
+            .earby-shop-current-name-content{
+                color: $text-color;
+            }
+        }
+        &.none{
+            .-col-content{
+                color: $gray;
+            }
+        }
+    }
+}
+// 门店列表
+.change-shop-list{
+    @at-root .change-shop-item{
+        background-color:$body-bg;
+        @at-root .change-shop-item-info{
+            padding-top: px2rem(25px);
+            padding-bottom: px2rem(25px);
+            @include border-radius(px2rem(3px));
+            background-color:#fff;
+            @include box-shadow(0 px2rem(2px) px2rem(8px) -1px rgba(0,0,0,.1));
+            .-col-left{
+                width:px2rem(70px);
+                font-size:px2em(13px);
+            }
+            @at-root .change-shop-item-chec{
+                margin-left: px2rem(20px);
+                margin-right: px2rem(20px);
+            }
+            
+            @at-root .change-shop-item-title{
+                font-weight:bold;
+                font-size:px2em(14px);
+                margin-bottom: px2rem(18px);
+            }
+            @at-root .change-shop-item-address{
+                margin-bottom: px2rem(60px - 24px * 2);
+            }
+            
+            @at-root .change-shop-item-nav{
+                border-left:1px solid $border-color;
+                margin-right: px2rem(20px);
+                padding-left: px2rem(20px);
+                .change-shop-item-nav-icon{
+                    font-size:px2em(14px);
+                    color: $gray;
+                    margin-top: px2rem(-4px);
+                    margin-bottom: px2rem(12px);
+                    .iconfont-location-arrow{
+                        @include transform(rotate(45deg));
+                    }
+                }
+                .change-shop-item-space{
+                    margin-bottom: px2rem(-4px);
+                    font-size:px2em(10px);
+                    color: $gray;
+                }
+            }
+        }
+        @at-root .change-shop-item-pickup-info{
+            height: px2rem(90px);
+            line-height: px2rem(90px);
+            @at-root .change-shop-item-pickup-info-label{
+                padding-left: px2rem(70px);
+                padding-right: px2rem(60px);
+            }
+            @at-root .change-shop-item-pickup-info-time{
+                color: $gray;
+            }
+            @at-root .change-shop-item-pickup-info-do{
+                text-align:right;
+                width:px2rem(80px);
+                color: $gray;
+                padding-right: px2rem(30px);
+            }
+        }
+    }
+}

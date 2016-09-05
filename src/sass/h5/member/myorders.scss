@@ -1,0 +1,102 @@
+@import "../../oecstore/init.scss";
+.myorders{
+    background-color: rgb(245,245,245);
+    &.layout-page.both-layout-page{
+        padding-bottom: 0px;
+        padding-top: px2rem(90px + 80px + 4px);
+    }
+    .orders-item,.order-status-done{
+        .orders-item-checkout{
+            .btn{
+                display:none;
+            }
+        }
+    }
+    // 待支付
+    .order-status-pay{
+        .orders-item-checkout{
+            .btn-order-pay,
+            .btn-order-cancel{
+                display:inline-block;
+            }
+        }
+    }
+    // 待收货
+    .order-status-receive{
+        .orders-item-checkout{
+            .btn-order-receive,.btn-order-logistic{
+                display:inline-block;
+            }
+        }
+    }
+    // 待评论
+    .order-status-appraise{
+        .orders-item-checkout{
+            .btn-order-appraise{
+                display:inline-block;
+            }
+        }
+    }
+    // 备货中
+    .order-status-stockup{
+        .orders-item-checkout{
+            .btn-order-changeshop,
+            .btn-order-cancel{
+                display:inline-block;
+            }
+        }
+    }
+    // 待自提
+    .order-status-pickup{
+        .orders-item-checkout{
+            .btn-order-pickupcode{
+                display:inline-block;
+            }
+        }
+    }
+}
+
+// 收货成功弹出框 开始
+.myorders-receive-dialog{
+    $dialog-height:450px;
+    $dialog-header-height: 300px;
+    height: px2rem(450px);
+    width: px2rem(550px);
+    font-size:px2rem($font-size-base*2);
+    top:px2rem($dialog-height / 2 + 2 * $gap) + $top-nav-height + $nav-height;
+    @include border-radius(px2rem($border-radius-large));
+    .close{
+        font-size:px2em(22px);
+        color: rgb(255,255,255);
+        top: px2rem(10px);
+        right: px2rem(10px);
+    }
+    .dialog-header{
+        height: px2rem(300px);
+        background: inline-image("source/my-order/recieved-backimg.png") no-repeat;
+        background-size:100% 100%;
+        color: rgb(255,255,255);
+        text-align:center;
+        .myorders-receive-dialog-h1{
+            font-size:px2em(24px);
+            padding-top: px2rem(100px);
+        }
+        .myorders-receive-dialog-h2{
+            font-size:px2em(15px);
+            padding-top: px2rem(43px);
+        }
+    }
+    .dialog-footer{
+        padding-top: px2rem(( $dialog-height - $dialog-header-height - 60px ) / 2);
+        font-size:px2em(18px);
+        text-align:center;
+        .btn-receive-dialog-comment{
+            width:px2rem(330px);
+            @include button-size(px2rem(60px),$border-radius:px2rem(30px));
+            @include border-radius(px2rem(60px));
+            border-color:$gray-lighter;
+        }
+    }
+}
+// 收货成功弹出框 结束
+

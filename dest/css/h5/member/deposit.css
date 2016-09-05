@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*--------------------- 充值 ---------------------*/
+/* line 5, ../../../sass/h5/member/deposit.scss */
+.deposit-wrapper .form-group-wrapper {
+  margin: 0.26667rem 0.13333rem;
+  padding: 0;
+}
+/* line 8, ../../../sass/h5/member/deposit.scss */
+.deposit-wrapper .form-group-wrapper .form-group {
+  padding: 0.2rem 0;
+}
+/* line 10, ../../../sass/h5/member/deposit.scss */
+.deposit-wrapper .form-group-wrapper .form-group .iconfont {
+  font-size: 1.5em;
+  padding-left: 0;
+  padding-right: 0.8em;
+}
+/* line 16, ../../../sass/h5/member/deposit.scss */
+.deposit-wrapper .form-group-wrapper .input-group-control {
+  padding-left: 0.4rem;
+  font-size: 1.25em;
+}
+/* line 21, ../../../sass/h5/member/deposit.scss */
+.deposit-wrapper .payment-type-header {
+  font-weight: normal;
+}
+/* line 24, ../../../sass/h5/member/deposit.scss */
+.deposit-wrapper .payment-type-list {
+  padding: 0.26667rem 0;
+}
+/* line 27, ../../../sass/h5/member/deposit.scss */
+.deposit-wrapper .deposit-submit {
+  margin-top: 0.4rem;
+}
+
+/* ------------------- dialog 基础样式 ------------------- */
+/* line 34, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit {
+  width: 5.92rem;
+  height: auto;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+/* line 39, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .close {
+  top: 0.2rem;
+  right: 0.2rem;
+  font-size: 2.5em;
+}
+/* line 44, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-main {
+  position: relative;
+  padding-top: 0.86667rem;
+  padding-bottom: 0.53333rem;
+}
+/* line 50, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-deposit-status {
+  margin-bottom: 0.93333rem;
+}
+/* line 53, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-deposit-mark {
+  margin: 0 auto;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+}
+/* line 60, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-deposit-title {
+  margin-top: 0.26667rem;
+  font-size: 0.4rem;
+}
+/* line 64, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-deposit-info {
+  font-size: 0.32rem;
+}
+/* line 66, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-deposit-info .money {
+  color: #ff317a;
+}
+/* line 70, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-deposit-subinfo {
+  margin-top: 0.6rem;
+  line-height: 1.2;
+}
+/* line 73, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-deposit-subinfo .money {
+  padding-left: 0.91667em;
+}
+/* line 77, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-footer {
+  height: 1.06667rem;
+  bottom: 0;
+}
+/* line 80, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit .dialog-footer .btn {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  line-height: 1.04rem;
+  font-size: 1.25em;
+  border-width: 0;
+  color: #fff;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 92, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit.success .dialog-deposit-mark {
+  color: #00ceb8;
+}
+/* line 95, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit.success .btn-recharge, .dialog-deposit.success .iconfont-circle-alarm {
+  display: none;
+}
+/* line 99, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit.success .dialog-footer .btn {
+  background-color: #00ceb8;
+}
+/* line 105, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit.error .dialog-deposit-mark {
+  color: #ff317a;
+}
+/* line 108, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit.error .btn-log, .dialog-deposit.error .iconfont-circle-check {
+  display: none;
+}
+/* line 112, ../../../sass/h5/member/deposit.scss */
+.dialog-deposit.error .dialog-footer .btn {
+  background-color: #ff317a;
+}

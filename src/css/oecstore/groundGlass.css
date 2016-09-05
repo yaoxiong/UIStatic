@@ -1,0 +1,1 @@
+.groundGlass{filter:url(blur.svg#blur);-webkit-filter:blur(10px);filter:blur(10px);filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=$ground-glass-num, MakeShadow=false)}

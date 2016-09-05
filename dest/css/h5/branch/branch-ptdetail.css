@@ -1,0 +1,150 @@
+/* line 5, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-banner {
+  position: relative;
+  height: 5.33333rem;
+  overflow: hidden;
+}
+/* line 10, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  color: white;
+  height: 0.66667rem;
+  line-height: 0.66667rem;
+  padding-left: 0.46667rem;
+  padding-right: 0.46667rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+/* line 21, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-title > span {
+  max-width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 26, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-header .icon-favorite {
+  position: absolute;
+  width: 0.93333rem;
+  height: 0.93333rem;
+  line-height: 0.93333rem;
+  top: 0.53333rem;
+  right: 0.53333rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.53333rem;
+}
+/* line 38, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-price {
+  height: 1.33333rem;
+  padding-top: 0.13333rem;
+  padding-left: 0.53333rem;
+  padding-right: 0.53333rem;
+  background-color: white;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 45, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-price .branch-cur-price {
+  color: #ff317a;
+}
+/* line 47, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-price .branch-cur-price .price {
+  font-size: 1.66667em;
+}
+/* line 51, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-price .branch-original-price {
+  color: #999;
+}
+/* line 53, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-price .branch-original-price .price {
+  text-decoration: line-through;
+}
+/* line 57, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-price .branch-ptdetail-share {
+  font-size: 1.25em;
+  height: 0.53333rem;
+  line-height: 0.53333rem;
+  border-left: 1px solid #e1e1e1;
+  padding-left: 0.66667rem;
+  color: #999;
+}
+/* line 69, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-barcode {
+  position: relative;
+  margin-left: 0.33333rem;
+  margin-right: 0.33333rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  text-align: center;
+}
+/* line 78, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-barcode-before, .branch-ptdetail-barcode-after {
+  position: absolute;
+  bottom: -0.26667rem;
+  display: block;
+  width: 0.26667rem;
+  height: 0.53333rem;
+  background-color: #f5f5f5;
+  z-index: 2;
+}
+/* line 87, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-barcode-before {
+  left: -0.6rem;
+}
+/* line 90, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-barcode-after {
+  right: -0.6rem;
+}
+/* line 93, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-barcode:before, .branch-ptdetail-barcode:after {
+  content: ' ';
+  position: absolute;
+  bottom: -0.26667rem;
+  display: block;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: 0 0.02667rem 0.13333rem 0 rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 0.02667rem 0.13333rem 0 rgba(0, 0, 0, 0.15) inset;
+}
+/* line 104, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-barcode:before {
+  left: -0.6rem;
+}
+/* line 107, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-barcode:after {
+  right: -0.6rem;
+}
+/* line 110, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-barcode img {
+  width: 7.09333rem;
+  height: 2.57333rem;
+}
+/* line 114, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-barcode-info {
+  padding: 0.4rem 0;
+  color: #666666;
+}
+/* line 119, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-list {
+  padding-left: 0.53333rem;
+  padding-right: 0.53333rem;
+}
+/* line 122, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-list .flex-row-between {
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+}
+/* line 124, ../../../sass/h5/branch/branch-ptdetail.scss */
+.branch-ptdetail-list .flex-row-between .-col-right {
+  color: inherit;
+  font-size: 1em;
+}

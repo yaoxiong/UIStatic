@@ -1,0 +1,487 @@
+/* line 2, ../../../sass/h5/product/product.scss */
+.product-detail {
+  position: relative;
+  -webkit-transition: margin 0.5s ease-in-out;
+  -moz-transition: margin 0.5s ease-in-out;
+  -o-transition: margin 0.5s ease-in-out;
+  -ms-transition: margin 0.5s ease-in-out;
+  transition: margin 0.5s ease-in-out;
+}
+
+/* line 6, ../../../sass/h5/product/product.scss */
+.product-detail-title {
+  height: 1.46667rem;
+  padding: 0 0.53333rem 0.13333rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+/* line 11, ../../../sass/h5/product/product.scss */
+.product-detail-title::before {
+  content: "\e63d";
+  font-family: "iconfont";
+  display: block;
+  width: 1.33333rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.66667rem;
+  top: -0.4rem;
+  text-align: center;
+  background: inherit;
+}
+/* line 23, ../../../sass/h5/product/product.scss */
+.product-detail-title .product-title {
+  font-size: 1.083em;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 28, ../../../sass/h5/product/product.scss */
+.product-detail-title .product-labels {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 31, ../../../sass/h5/product/product.scss */
+.product-detail-title .label {
+  padding: .35em .7em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: .07rem;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 40, ../../../sass/h5/product/product.scss */
+  [data-dpr="2"] .product-detail-title .label {
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+}
+/* line 46, ../../../sass/h5/product/product.scss */
+.product-imgs-wrapper {
+  position: relative;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 50, ../../../sass/h5/product/product.scss */
+.product-imgs-guide-list {
+  position: absolute;
+  left: 0.26667rem;
+  top: 0.53333rem;
+}
+/* line 54, ../../../sass/h5/product/product.scss */
+.product-imgs-guide-list .btn {
+  display: block;
+  font-size: 1.25em;
+  margin-bottom: 0.4rem;
+  padding: .34em .5em;
+  border-width: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+/* line 63, ../../../sass/h5/product/product.scss */
+.product-imgs-guide-list.fixed {
+  position: fixed;
+  top: 1.73333rem;
+  z-index: 1000;
+}
+
+/* line 71, ../../../sass/h5/product/product.scss */
+.product-detail-main {
+  background-color: #f5f5f5;
+}
+
+/* line 74, ../../../sass/h5/product/product.scss */
+.product-detail-brief {
+  padding: 0.66667rem 0.53333rem 0;
+  border-bottom: 1px solid #e1e1e1;
+  color: #999;
+  background-color: #fff;
+}
+/* line 79, ../../../sass/h5/product/product.scss */
+.product-detail-brief .product-prices {
+  line-height: 1.8em;
+  margin-bottom: 0.4rem;
+}
+/* line 82, ../../../sass/h5/product/product.scss */
+.product-detail-brief .product-prices > .-col-right {
+  height: 0.53333rem;
+  line-height: 0.53333rem;
+  padding-left: 0.66667rem;
+  border-left: 1px solid #e1e1e1;
+  font-size: 1.25em;
+}
+/* line 89, ../../../sass/h5/product/product.scss */
+.product-detail-brief .product-primary-price {
+  color: #ff317a;
+}
+/* line 91, ../../../sass/h5/product/product.scss */
+.product-detail-brief .product-primary-price > .price {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* line 96, ../../../sass/h5/product/product.scss */
+.product-detail-brief .product-old-price {
+  margin-left: .5em;
+}
+/* line 98, ../../../sass/h5/product/product.scss */
+.product-detail-brief .product-old-price > .price {
+  text-decoration: line-through;
+}
+/* line 102, ../../../sass/h5/product/product.scss */
+.product-detail-brief .product-note {
+  line-height: 1.4;
+  font-size: .91em;
+}
+/* line 106, ../../../sass/h5/product/product.scss */
+.product-detail-brief .product-other {
+  color: #333;
+  line-height: 0.66667rem;
+}
+
+/* line 113, ../../../sass/h5/product/product.scss */
+.product-detail-grade .product-comment > .num {
+  color: #333;
+}
+
+/* line 118, ../../../sass/h5/product/product.scss */
+.dialog-product {
+  height: 10.74667rem;
+  padding-left: 0.53333rem;
+  padding-right: 0.53333rem;
+}
+/* line 122, ../../../sass/h5/product/product.scss */
+.dialog-product .close {
+  color: #cdcdcd;
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  right: 0;
+  font-size: 2.2em;
+  text-align: center;
+}
+/* line 131, ../../../sass/h5/product/product.scss */
+.dialog-product .dialog-header {
+  height: 2.4rem;
+  padding-top: 0.46667rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 136, ../../../sass/h5/product/product.scss */
+.dialog-product .dialog-footer {
+  height: 1.28rem;
+  margin-left: -0.53333rem;
+  margin-right: -0.53333rem;
+  font-size: 1.5em;
+}
+/* line 141, ../../../sass/h5/product/product.scss */
+.dialog-product .dialog-footer .btn-group-justified {
+  height: 100%;
+}
+/* line 143, ../../../sass/h5/product/product.scss */
+.dialog-product .dialog-footer .btn-group-justified > .btn {
+  border-radius: 0;
+}
+/* line 148, ../../../sass/h5/product/product.scss */
+.dialog-product .dialog-product-img {
+  position: absolute;
+  width: 2.66667rem;
+  height: 2.66667rem;
+  top: -0.53333rem;
+  border-radius: 0.06667rem;
+  border: 2px solid #e1e1e1;
+  overflow: hidden;
+}
+/* line 157, ../../../sass/h5/product/product.scss */
+.dialog-product .dialog-product-side {
+  margin-left: 3.06667rem;
+}
+/* line 160, ../../../sass/h5/product/product.scss */
+.dialog-product .dialog-product-title, .dialog-product .dialog-product-price {
+  margin-bottom: 0.33333rem;
+}
+/* line 163, ../../../sass/h5/product/product.scss */
+.dialog-product .primary-price {
+  color: #ff317a;
+}
+/* line 165, ../../../sass/h5/product/product.scss */
+.dialog-product .primary-price > .price {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* line 170, ../../../sass/h5/product/product.scss */
+.dialog-product .old-price {
+  color: #999;
+}
+/* line 172, ../../../sass/h5/product/product.scss */
+.dialog-product .old-price > .price {
+  text-decoration: line-through;
+}
+
+/* line 178, ../../../sass/h5/product/product.scss */
+.dialog-product-list > li {
+  position: relative;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 184, ../../../sass/h5/product/product.scss */
+.dialog-product-list .note {
+  font-size: .84em;
+  color: #666;
+}
+
+/* line 189, ../../../sass/h5/product/product.scss */
+.dialog-product-promotion,
+.dialog-product-present {
+  height: 8.34667rem;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 195, ../../../sass/h5/product/product.scss */
+.dialog-product-promotion .dialog-product-list > li,
+.dialog-product-present .dialog-product-list > li {
+  padding-right: 0.8rem;
+  padding-bottom: 0.33333rem;
+}
+/* line 198, ../../../sass/h5/product/product.scss */
+.dialog-product-promotion .dialog-product-list > li:first-child,
+.dialog-product-present .dialog-product-list > li:first-child {
+  line-height: 0.6rem;
+}
+/* line 202, ../../../sass/h5/product/product.scss */
+.dialog-product-promotion .dialog-product-list > li.act::after,
+.dialog-product-present .dialog-product-list > li.act::after {
+  content: "\e61c";
+  font-family: "iconfont";
+  position: absolute;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  top: 50%;
+  right: 0;
+  margin-top: -1em;
+  line-height: 2em;
+  font-size: 1.5em;
+  color: #ff317a;
+  text-align: center;
+}
+/* line 217, ../../../sass/h5/product/product.scss */
+.dialog-product-promotion .dialog-product-list .flex-row-between,
+.dialog-product-present .dialog-product-list .flex-row-between {
+  margin-bottom: 0.26667rem;
+}
+
+/* line 224, ../../../sass/h5/product/product.scss */
+.dialog-product-present .dialog-product-list .-col-left {
+  width: 0.93333rem;
+  height: 0.93333rem;
+  margin-right: 0.26667rem;
+  border-radius: 0.04rem;
+  overflow: hidden;
+}
+
+/* line 234, ../../../sass/h5/product/product.scss */
+.dialog-product-promotion .num-decimal, .dialog-product-promotion .num-int {
+  font-weight: bold;
+}
+/* line 237, ../../../sass/h5/product/product.scss */
+.dialog-product-promotion .num-int {
+  font-size: 1.5em;
+}
+/* line 239, ../../../sass/h5/product/product.scss */
+.dialog-product-promotion .num-int::after {
+  content: '.';
+}
+/* line 243, ../../../sass/h5/product/product.scss */
+.dialog-product-promotion .promotion-rule {
+  margin: 0.2rem 0;
+}
+
+/* line 247, ../../../sass/h5/product/product.scss */
+.dialog-product-spec {
+  height: 7.06667rem;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 252, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .dialog-product-list > li {
+  padding-top: 0.33333rem;
+  padding-bottom: 0.33333rem;
+}
+/* line 256, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .dialog-product-list .spec-title {
+  padding-left: 0.13333rem;
+  margin-bottom: 0.33333rem;
+}
+/* line 260, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .dialog-product-list .spec-list {
+  overflow: hidden;
+  margin-top: -0.13333rem;
+  margin-bottom: -0.13333rem;
+}
+/* line 265, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .dialog-product-list .spec-item {
+  float: left;
+  margin-top: 0.13333rem;
+  margin-bottom: 0.13333rem;
+  padding-left: 0.13333rem;
+  padding-right: 0.13333rem;
+}
+/* line 271, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .dialog-product-list .spec-item .btn {
+  background-color: #f0f0f0;
+  border-color: #f0f0f0;
+  height: 0.73333rem;
+  line-height: 0.73333rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-width: 1px;
+}
+/* line 160, ../../../sass/oecstore/mixins/_tools.scss */
+[data-dpr="2"] .dialog-product-spec .dialog-product-list .spec-item .btn {
+  border-width: 2px;
+}
+/* line 167, ../../../sass/oecstore/mixins/_tools.scss */
+[data-dpr="3"] .dialog-product-spec .dialog-product-list .spec-item .btn {
+  border-width: 3px;
+}
+/* line 279, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .dialog-product-list .spec-item.act .btn {
+  color: #ff317a;
+  background-color: #fff;
+  border-color: #ff317a;
+}
+/* line 281, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .dialog-product-list .spec-item.act .btn::after {
+  content: "\e61c";
+  font-family: "iconfont";
+  margin-left: .5em;
+}
+/* line 290, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .spec-sku, .dialog-product-spec .number-ipts {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 294, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .number-ipts {
+  padding-left: 0.13333rem;
+  margin-right: 0.4rem;
+}
+/* line 297, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .number-ipts .btn-ipt {
+  width: 1.33333rem;
+  margin-left: 0.13333rem;
+  margin-right: 0.13333rem;
+}
+/* line 304, ../../../sass/h5/product/product.scss */
+.dialog-product-spec .spec-sku .num {
+  color: #ff317a;
+}
+
+/* line 309, ../../../sass/h5/product/product.scss */
+.product-helpdesk {
+  font-size: 1.5em;
+}
+/* line 311, ../../../sass/h5/product/product.scss */
+.product-helpdesk .btn-group {
+  width: 100%;
+}
+/* line 314, ../../../sass/h5/product/product.scss */
+.product-helpdesk .btn {
+  position: relative;
+  height: 1.33333rem;
+  line-height: 1.33333rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  border: none;
+  border-radius: 0;
+}
+/* line 321, ../../../sass/h5/product/product.scss */
+.product-helpdesk .btn:nth-child(2n)::before, .product-helpdesk .btn:nth-child(2n)::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  margin-top: -0.55em;
+  width: 1px;
+  height: 1.1em;
+  background-color: #f9f6f3;
+  z-index: 1;
+}
+/* line 332, ../../../sass/h5/product/product.scss */
+.product-helpdesk .btn:nth-child(2n)::before {
+  left: 0;
+}
+/* line 335, ../../../sass/h5/product/product.scss */
+.product-helpdesk .btn:nth-child(2n)::after {
+  display: none;
+  right: 0;
+}
+/* line 343, ../../../sass/h5/product/product.scss */
+.product-helpdesk .disabled:nth-child(2n)::after {
+  display: inline-block;
+}
+/* line 348, ../../../sass/h5/product/product.scss */
+.product-helpdesk .iconfont {
+  font-size: 1.2em;
+  vertical-align: top;
+}
+/* line 352, ../../../sass/h5/product/product.scss */
+.product-helpdesk .icon-favotrite {
+  width: 15.4%;
+}
+/* line 355, ../../../sass/h5/product/product.scss */
+.product-helpdesk .btn-fast-buy {
+  width: 37.3%;
+}
+/* line 358, ../../../sass/h5/product/product.scss */
+.product-helpdesk .btn-add-cart {
+  width: 47.3%;
+}
+/* line 361, ../../../sass/h5/product/product.scss */
+.product-helpdesk .btn-inform {
+  width: 84.6%;
+  background-color: #fabd3d;
+  color: #fff;
+}
+
+/* line 367, ../../../sass/h5/product/product.scss */
+.arrival-notice-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 0.53333rem;
+  padding-right: 0.53333rem;
+  background-color: #fff;
+  height: 1.46667rem;
+  line-height: 1;
+  top: -1.46667rem;
+  color: #333;
+  text-align: left;
+  border-top: 1px solid #e1e1e1;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+}
+/* line 381, ../../../sass/h5/product/product.scss */
+.arrival-notice-wrapper .flex-row-between {
+  height: 100%;
+}
+/* line 383, ../../../sass/h5/product/product.scss */
+.arrival-notice-wrapper .flex-row-between .-col-left {
+  margin-right: 0.4rem;
+}
+/* line 386, ../../../sass/h5/product/product.scss */
+.arrival-notice-wrapper .flex-row-between input {
+  height: 0.8rem;
+  padding-left: 0.26667rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.06667rem;
+}

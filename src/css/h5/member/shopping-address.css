@@ -1,0 +1,57 @@
+/* line 4, ../../../sass/h5/member/shopping-address.scss */
+.member-address-item {
+  padding: 0.4rem;
+  padding-bottom: 0.22667rem;
+  font-size: 1.08333em;
+}
+/* line 8, ../../../sass/h5/member/shopping-address.scss */
+.member-address-item.active {
+  background-color: #fffbf4;
+}
+/* line 10, ../../../sass/h5/member/shopping-address.scss */
+.member-address-item.active .checkbox {
+  color: #ff317a;
+}
+/* line 15, ../../../sass/h5/member/shopping-address.scss */
+.member-address-item .member-address-item-header > div {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 19, ../../../sass/h5/member/shopping-address.scss */
+.member-address-item .member-address-item-phone {
+  margin-left: 1.2rem;
+}
+/* line 22, ../../../sass/h5/member/shopping-address.scss */
+.member-address-item .member-address-item-content {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+/* line 27, ../../../sass/h5/member/shopping-address.scss */
+.member-address-item .member-address-item-bottom {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 0.22667rem;
+  color: #999;
+}
+/* line 32, ../../../sass/h5/member/shopping-address.scss */
+.member-address-item .member-address-item-bottom .-col-content label::before {
+  margin-right: 0.33333rem;
+}
+/* line 37, ../../../sass/h5/member/shopping-address.scss */
+.member-address-item .member-address-item-bottom .-col-right > .btn {
+  border-color: #999;
+  -moz-border-radius: 0.06667rem;
+  -webkit-border-radius: 0.06667rem;
+  border-radius: 0.06667rem;
+  color: #999;
+  height: 0.66667rem;
+  line-height: 0.66667rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  padding-left: 0.34667rem;
+  padding-right: 0.34667rem;
+}

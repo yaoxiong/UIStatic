@@ -1,0 +1,48 @@
+@import "../../oecstore/init.scss";
+
+.member-address{
+    @at-root .member-address-item{
+        padding: px2rem(30px);
+        padding-bottom: px2rem(17px);
+        font-size:px2em(13px);
+        &.active{
+            background-color: rgb(255,251,244);
+            .checkbox{
+                color: $oec-primary-light;
+            }
+        }
+        .member-address-item-header{
+            >div{
+                @include inline-block;
+            }
+        }
+        .member-address-item-phone{
+            margin-left: px2rem(90px);
+        }
+        .member-address-item-content{
+            margin-top: px2rem(30px);
+            margin-bottom: px2rem(30px);
+            line-height: 1.2;
+        }
+        .member-address-item-bottom{
+            border-top:1px solid $border-color;
+            padding-top: px2rem(17px);
+            color: $gray-light;
+            .-col-content{
+                label::before{
+                    margin-right: px2rem(25px);
+                }
+            }
+            .-col-right{
+                >.btn{
+                    border-color: $gray-light;
+                    @include border-radius(px2rem(5px));
+                    color: $gray-light;
+                    @include button-size(px2rem(50px));
+                    padding-left:px2rem(26px);
+                    padding-right:px2rem(26px);
+                }
+            }
+        }
+    }
+}

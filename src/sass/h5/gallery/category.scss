@@ -1,0 +1,86 @@
+@import "../../oecstore/init.scss";
+.category{
+    height:100%;
+    // 商品种类内容
+    @at-root .category-content{
+        height: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        >div{
+            @include inline-block;
+            max-height: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling:touch;
+        }
+        @at-root .category-content-first{
+            width: px2rem(200px);
+            vertical-align: top;
+            text-align: center;
+            @at-root .category-content-first-item{
+                @include inline-block;
+                width: px2rem(200px);
+                height: px2rem(80px);
+                line-height: px2rem(80px);
+                border-top: 1px solid $border-color;
+                border-right: 1px solid $border-color;
+                background-color: rgb(245,245,245);
+                &:first-child{
+                    border-top-width: 0;
+                }
+                &.active{
+                    border-right-color: #fff;
+                    background-color: rgb(255,255,255);
+                }
+            }
+        }
+        @at-root .category-content-second{
+            // float: right;
+            width: px2rem(750px - 200px);
+            background-color: rgb(255,255,255);
+            vertical-align: top;
+            @at-root .category-content-second-item{
+                @at-root .category-content-second-item-title{
+                    >div{
+                        @include inline-block;
+                        line-height: px2rem(6px * 2 + 24px);
+                    }
+                    @at-root .category-content-second-item-title-squre{
+                        width: px2rem(11px);
+                        height: px2rem(11px);
+                        @include border-radius(50%);
+                        margin-left: px2rem(12px);
+                        margin-right: px2rem(10px);
+                        background-color: rgb(102,102,102);
+                    }
+                    @at-root .category-content-second-item-title-h1{
+                        margin-right: px2rem(6px);
+                    }
+                }
+                @at-root .category-content-second-item-list{
+                    @at-root .category-content-second-item-item{
+                        @include inline-block;
+                        margin-top: px2rem(19px);
+                        margin-left: px2rem(19px);
+                        margin-bottom: px2rem(19px);
+                        width: px2rem(157px);
+                        height: px2rem(211px);
+                        border:1px solid $border-color;
+                        text-align: center;
+                        img{
+                            width: px2rem(140px);
+                            height:px2rem(140px);
+                            margin-left: px2rem(9px);
+                            margin-right: px2rem(8px);
+                            margin-top: px2rem(11px);
+                        }
+                        @at-root .category-content-second-item-item-label{
+                            text-align: center;
+                            @include height(px2rem(60px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
